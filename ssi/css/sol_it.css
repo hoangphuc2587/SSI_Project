@@ -1,0 +1,83 @@
+@media screen and (max-width: 767px){
+    body{
+        /*font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro';*/
+    }
+    .sub-visual-txt {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .process .ttl-underline span{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .ttl-underline span:before {
+        height: 8px;
+        bottom: -4px;
+    }
+    .sol-it .process-list-item .ttl-underline span{
+        font-size: 21px;
+    }
+    .sol-it .process-title{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .sol-it .process-txt{
+        color:#000;
+        line-height: 30px;
+    }
+    #sp-main-body{
+        padding-top:0px;
+    }
+
+    .gradient-ttl:before{
+        width: 2px;
+    }
+    .gradient-ttl{margin-bottom: 10px;}
+    .sol-it-list-item{padding:10px 0px;
+        margin-bottom: 18px;}
+    .sol-it-list-item .left{padding:0px;}
+    .sol-it-list .info{padding: 0px 10px;}
+    .gradient-ttl{
+        padding:10px 0 10px 13px;
+    }
+    .sol-it-list-item:last-child{
+        margin-bottom: 0px;
+    }
+    .yellow-triangle {padding: 15px 0px 20px 0;}
+    .yellow-triangle img{width:100px;}
+    .sol-it-item .ttl-underline {margin-top:0px;
+        text-transform: uppercase;}
+    .sol-it-list-item .right{
+        padding: 0px 10px;
+    }
+    .img_larg img{width:100%;}
+    .sol-it .process-list-item{
+        padding: 12px 10px;
+    }
+    .process-list{
+        margin-bottom: 25px;
+    }
+    .gradient-ttl:before{
+        width: 6px;
+    }
+    .gradient-ttl{
+        margin-bottom: 5px;
+    }
+    .bg-green03{
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 415px){
+    .common-product .pmsquet .bg-pmsquet{
+        height: 345px;
+    }
+    .common-product .pmsquet .gradient-border{
+        height: 345px;
+    }
+    .common-product .pmsquet .btn-wrapper{top:324px;}
+}

@@ -1,0 +1,149 @@
+ul.jukensha-ttl, ul.saitensha-ttl, ul.kanrisha-ttl {
+    display: flex;
+    align-items: center;
+}
+ul.sgs_tab_list.js-tab_list {
+    margin-bottom: 10px;
+}
+.notice-inner .btn-wrapper {
+    margin-top: 10px;
+    width: 255px;
+}
+.sgs_tab_list li {
+    line-height:18px;
+}
+.notice-inner .btn-wrapper {
+	width: 250px;
+}
+.notice-info{
+	margin-bottom: 50px;
+}
+.sgs-table > tbody > tr > td:nth-child(3) strong {
+    font-weight: 500;
+    top: 1px;
+}
+.sgs-table td span{
+	font-family: HiraKakuPro-W3;
+}
+
+@media(max-width: 767px){
+	.fortitle {
+	    height: 150px!important;
+	    padding: 0!important;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-self: center;
+	}
+	.tableauto table.table.sgs-table tr td:first-child {
+		vertical-align: middle;
+	}
+
+	.sgs_item.img-left img {
+		height: 34px;
+		width: auto;
+	}
+	.sgs-background {
+	    height: auto !important;
+	    padding: 0 20px;
+	}
+
+	.doc-pad {
+	    padding: 0;
+	}
+
+	.sgs-inner {
+	    padding: 0;
+	}
+
+	.sgs-block .sgs-inner .scrollbar-vista{
+		margin-bottom: 30px;
+	}
+
+	li.sgs-doc-item img {
+	    margin: 0 20px;
+	}
+	li.sgs-doc-item img {
+	    margin: 0 20px;
+	}
+	.tableauto {width: 100%;overflow: scroll;}
+	.tableauto table.table.sgs-table {
+	    width: inherit;
+	    margin: 15px 0px !important;
+	    width: 910px;
+	}
+	section.sgs-block {
+	    padding: 0 10px;
+	}
+	.sgs-math {
+	    font-size: 20px;
+	}
+	p.sgs-size {
+	    font-size: 16px;
+	}
+	.sgs_item {
+	    display: flex;
+	    flex-wrap: inherit;
+	    align-items: unset;
+	}
+
+	p.sgs-txt {
+	    font-size: 14px;
+	    padding-left: 40px;
+	}
+	p.sgs-btn-wrapper.absolute {
+	    width: 110px;
+	    font-size: 14px;
+	    margin-left: 10px;
+	}
+
+	p.sgs-btn-wrapper.absolute span {
+	    font-size: 14px;
+	    letter-spacing: 0;
+	    top: 8px;
+	}
+
+	p.sgs-btn-txt {
+	    padding: 0px 20px;
+	    margin-bottom: 10px;
+	}
+
+	.sgs-border {
+	    height: 150px;
+	}
+
+	.sgs-gradient-border {
+	    height: 125px;
+	}
+	.sgs_item.img-left {
+	    margin-bottom: 20px;
+	}
+
+	.sys-text.txt-item {
+	    margin-top: 5px;
+	}
+
+	li.sgs-list-item {
+	    /* margin-bottom: 0; */
+	}
+
+	.sgs-info {
+	    margin-bottom: 0;
+	}
+
+	.notice-info {
+	    margin-top: 0;
+	    margin-bottom: 10px;
+	}
+
+	p.notice-txt1 {
+	    margin-bottom: 10px;
+	}
+	li.sgs-doc-item img{
+		margin: 0 5px;
+	}
+	.img_haf img{
+		/*width:102px;*/
+		display: inline-block;
+	}
+}

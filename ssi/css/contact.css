@@ -1,0 +1,127 @@
+span.errMessage{
+color: red;
+}
+.block-completion{
+    text-align: center;
+    /* margin: 100px; */
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.block-completion h2{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #000;
+}
+.showsp{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .showpc{
+        display: none;
+    }
+    .showsp{
+        display: block;
+    }
+    .contact-txt{
+        text-align: center;
+    }
+    .contact .infomation{
+        padding:20px 0px;
+    }
+    .ttl-underline span{
+
+    }
+    .contact{
+        background-color: #f4fffb;
+        padding-bottom: 25px;
+    }
+    .contact .infomation .txt{
+        padding:0px 15px;
+    }
+    .contact .infomation .txt p.phone span:first-child {
+        width: 40px;
+        margin-right: 10px;
+    }
+    .contact .infomation .txt p.phone{
+        margin-top: 2px;
+    }
+    .ttl-underline span {
+        font-size: 22px;
+    }
+    .required{
+        width: auto;
+        height: auto;
+        padding:0px 5px;
+        margin-left: 5px;
+    }
+    .block-form table td {
+        padding: 7px 0;
+        padding-bottom: 10px;
+    }
+    .input{
+        height: 28px;
+    }
+    .block-form .list-tbl{width: 100%;}
+    .block-form .list-tbl .p-postal-code {
+        width: 30%;
+        min-width: 105px;
+    }
+    .block-form .list-tbl .p-postal-code[name='code02']{
+        width:60%;
+    }
+    input[name="state"]{
+        width: 100%;
+        min-width: 105px;
+    }
+    .block-form .w01{
+        min-width: 105px;
+        margin-right: 37px;
+        width: 30%;
+    }
+    .block-form table td select{
+        height: 28px;
+    }
+    .block-form table td textarea, .input, .select-items div, .select-selected{
+        font-size: 12px;
+    }
+    .block-form table td textarea{
+        height: 120px;
+    }
+    .block-button{
+        padding-top: 5px;
+    }
+    .txt-check [type="checkbox"]:not(:checked) + label:before, .txt-check [type="checkbox"]:checked + label:before{
+        border: 1px solid #dedede;
+    }
+    .txt-check [type="checkbox"]:not(:checked) + label:before, .txt-check [type="checkbox"]:checked + label:before{
+        height: 15px;
+        width: 15px;
+        top: 0px;
+    }
+    .txt-check [type="checkbox"]:not(:checked) + label, .txt-check [type="checkbox"]:checked + label{
+        padding-left: 25px;
+    }
+    .list-form{
+        justify-content: normal;
+    }
+    .btn span  {
+        top: 8px;
+        letter-spacing: normal;
+    }
+}
+@media (max-width: 420px) {
+    .block-completion h2{
+        font-size: 14px;
+        padding: 0 5px;
+    }
+    .block-completion{
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+}
+div#confirm_contact{
+    margin-top: 15px;
+}

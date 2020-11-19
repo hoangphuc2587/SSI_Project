@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px){
+    .ttl-underline span {
+        font-size: 22px;
+    }
+    .intent_no dd {
+        padding-left: 10px;
+    }
+    .intent_no dd p{
+        padding-left: 0px;
+        text-indent: inherit;
+    }
+    .policy dd p{
+        text-indent: -20px;
+    }
+    .policy dd{
+        padding-left: 0px;
+    }
+    .tbl_sp{
+        width: 100%;
+        overflow: scroll;
+    }
+    .tbl_sp table{
+        width: 920px;
+    }
+    .policy-item.intent_no dd p{
+        text-indent: 0px;
+    }
+    .policy table tr {
+    -ms-grid-columns: 60px (1fr)[2];
+    grid-template-columns: 60px repeat(2, 1fr);
+    }
+    .sub_bol{
+        padding-left: 20px;
+        text-indent: -22px;
+        font-weight: bold;
+    }
+}

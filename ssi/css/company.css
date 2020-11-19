@@ -1,0 +1,152 @@
+.com_detail{
+    display: flex;
+    padding-left: 30px;
+}
+.com_right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    margin-left: 10px;
+}
+.com_right span{
+    margin-left: 5px;
+}
+.com_info:first-child{
+    margin-bottom: 15px;
+}
+.certificate{
+    display: flex;
+}
+.certificate_titile{
+    white-space: nowrap;
+    margin-right:5px;
+}
+.isms img{
+    min-width: 200px;
+}
+.text-is{
+    text-align: center;
+    /*font-weight: bold;*/
+    font-size: 15px;
+}
+.p_link{
+    color: #0070C0;
+    text-decoration: underline !important;
+}
+.p_link:hover{
+    color: #ff0000;
+}
+.p_img:hover{
+    opacity: 0.7;
+}
+.com_left a, .com_left img:focus{
+    outline: none;
+}
+@media screen and (min-width: 770px) {
+    .table-customize > tbody > tr > td:first-child{
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width:500px ){
+    .isms{
+        display: block;
+    }
+    .isms .com_left{
+        display: inline-block;
+    }
+    .isms .com_right{
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 768px){
+    .tab-wrapper {
+        top: 0;
+    }
+
+}
+@media screen and (max-width: 767px){
+    .ttl-underline{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .ttl-underline span:before {
+        height: 5px;
+        bottom: -3px;
+
+    }
+    .company .table .block-button{
+        text-align: center;
+    }
+    .company-table{
+        margin-bottom: 30px;
+    }
+    .company .time-line .entries .entry .title{
+        padding-bottom: 3px;
+    }
+    .company .time-line .entries .entry:nth-child(2n) .title .circle{
+        top:-6px;
+    }
+
+        .company .time-line .entries .entry.w-2 .body, .company .time-line .entries .entry.w-8 .body, .company .time-line .entries .entry.w-9 .body, .company .time-line .entries .entry.w-10 .body {
+            padding-top: 10px;
+            padding-right: 75px;
+        }
+    .company .time-line .entries .entry:nth-child(2n + 1) .title .circle{
+        top: -6px;
+    }
+    .company .history{
+        padding-bottom: 30px;
+    }
+    .com_map h2{
+        padding-top:30px;
+        padding-bottom: 20px;
+    }
+    .ttl-underline span{
+        font-size: 22px;
+    }
+    .company .tab-access .tab_contents_item{
+        border-radius: 5px;
+    }
+    .common-product .common-product-item-info{
+        line-height: 20px;
+    }
+    .common-product-txt{
+        font-size: 14px;
+    }
+    .company .time-line:before {
+        height: calc(100% - 86px);
+    }
+    .company .time-line:before{top:50px}
+    .company .time-line:before{
+        background: linear-gradient(to bottom, #35c4ea 0%, #35c4ea 50%, #35c4ea 50%, #8fca70 61%, #8fca70 100%);
+    }
+    .company .time-line .entries .entry:nth-child(2n + 1) {
+        width: auto;
+        float: left;
+    }
+    .company .time-line .entries .entry {
+        width: auto;
+        float: left;
+        padding: 60px 0 60px 0;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 320px){
+    .table-responsive > tbody > tr td:first-child{
+        padding:4px;
+        padding-left: 10px;
+    }
+    .table-responsive > tbody > tr td{
+        padding:4px;
+        line-height: 25px;
+        padding-left: 10px;
+    }
+    body {
+        /*font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro';*/
+    }
+    .company .map .ttl{
+        margin-top:10px;
+        font-size: 20px;
+    }
+}

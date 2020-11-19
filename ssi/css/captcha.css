@@ -1,0 +1,29 @@
+.captchaTextBox{
+    padding: 10px 6px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+} 
+.captchaImage{
+  background-image:url("../images/contact/captcha_bg.jpg");
+  width: 172px;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 5px
+}
+.captcha {
+    display: flex;
+    align-items: center;
+}
+.captcha i {
+    margin-left: 10px;
+}
+.disableLink{
+  pointer-events: none;
+}
+canvas{
+  /*prevent interaction with the canvas*/
+  pointer-events:none;
+}

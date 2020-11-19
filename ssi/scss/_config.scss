@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'HiraKakuPro-W3';
+  src: url('fonts/HiraKakuPro-W3-AlphaNum.eot'); /* IE9 Compat Modes */
+  src: url('fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('fonts/HiraKakuPro-W3-AlphaNum.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('fonts/HiraKakuPro-W3-AlphaNum.woff')
+      format('woff'),
+    /* Pretty Modern Browsers */ url('fonts/HiraKakuPro-W3-AlphaNum.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('fonts/HiraKakuPro-W3-AlphaNum.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'HiraKakuPro-W6';
+  src: url('fonts/HiraKakuPro-W6-AlphaNum.eot'); /* IE9 Compat Modes */
+  src: url('fonts/HiraKakuPro-W6-AlphaNum.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('fonts/HiraKakuPro-W6-AlphaNum.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('fonts/HiraKakuPro-W6-AlphaNum.woff')
+      format('woff'),
+    /* Pretty Modern Browsers */ url('fonts/HiraKakuPro-W6-AlphaNum.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('fonts/HiraKakuPro-W6-AlphaNum.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'NotoSansCJKjp-Regular';
+  src: url('fonts/NotoSansCJKjp-Regular-Alphabetic.eot'); /* IE9 Compat Modes */
+  src: url('fonts/NotoSansCJKjp-Regular-Alphabetic.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('fonts/NotoSansCJKjp-Regular-Alphabetic.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('fonts/NotoSansCJKjp-Regular-Alphabetic.woff') format('woff'),
+    /* Pretty Modern Browsers */
+      url('fonts/NotoSansCJKjp-Regular-Alphabetic.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('fonts/NotoSansCJKjp-Regular-Alphabetic.svg#svgFontName')
+      format('svg'); /* Legacy iOS */
+}
+
+$dark-color: #383938;
+$light-color: #ffffff;
+$green01-color: #8fca70;
+$green02-color: #67a149;
+$green03-color: #f4fffb;
+$green04-color: #26d2ac;
+$green05-color: #8ad181;
+$blue01-color: #35c4ea;
+$blue02-color: #19a9eb;
+$blue03-color: #cef1fa;
+
+$max-width: 1170px;
+$contact-width: 980px;
+$inner: 920px;
+$font01: 'HiraKakuPro-W3';
+$font02: 'NotoSansCJKjp-Regular';
+$font03: 'HiraKakuPro-W6';
+
+// Set text color based on background
+// @function set-text-color($color) {
+//   @if (lightness($color) > 60) {
+//     @return $black-color;
+//   } @else {
+//     @return #fff;
+//   }
+// }
+
+// Set text gradient
+@mixin set-text-gradient($deg, $color01, $color02, $percent) {
+  background: -webkit-linear-gradient($deg, $color01, $color02 $percent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Set background & text color
+@mixin set-background($bg_color, $text_color) {
+  background-color: $bg_color;
+  color: $text_color;
+}
+
+// Margin & Padding
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  // All around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Vertical Margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // All around Padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Vertical Padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}

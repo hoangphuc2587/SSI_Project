@@ -1,0 +1,68 @@
+.sol-kyoiku .education-list-item a{
+    border-radius: 6px;
+}
+@media screen and (max-width: 767px){
+    body{
+        /*font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro';*/
+    }
+    .sub-visual-txt {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .sol-kyoiku .education-txt-head{
+       margin : 10px auto;
+    }
+    .ttl-underline.sol-kyo{margin-top:0px;}
+    .sol-kyoiku .education-txt{
+        color: #000;
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 10px;
+        font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro';
+    }
+    .sol-kyoiku .education-list-item{
+        margin-bottom: 10px;
+    }
+    .gradient-ttl:before{
+        width: 5px;
+        max-height: 35px;
+        top:5px;
+    }
+
+    .gradient-ttl{margin-bottom: 10px;}
+
+    .gradient-ttl{
+        padding:10px 0 10px 13px;
+    }
+    .sol-kyoiku .gradient-ttl{margin-bottom:0px;}
+    .txt-item .bold{
+        font-size: 16px;
+        font-family: "HiraKakuPro-W6";
+    }
+    .sol-kyoiku-info .txt .extra-content{
+        padding-left: 15px;}
+    .sol-kyoiku-info .txt .content{
+        padding-left: 0px;
+    }
+    .ttl-underline .title_nounder:before{
+        background: none;
+    }
+    .sol-kyoiku .education-list-item a{
+        height: 137px;
+    }
+    .last_item{
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 415px){
+    .common-product .pmsquet .bg-pmsquet{
+        height: 345px;
+    }
+    .common-product .pmsquet .gradient-border{
+        height: 345px;
+    }
+    .common-product .pmsquet .btn-wrapper{top:324px;}
+}

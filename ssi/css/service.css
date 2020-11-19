@@ -1,0 +1,196 @@
+.service2 .it-txt{
+    margin-top: 52px;
+}
+.service2 .it-txt{
+    line-height: 25px;
+    margin-top:-25px;
+}
+.service2 .it-txt2{
+    line-height: 25px;
+    margin-top:-25px;
+}
+.service2 .it-txt3{
+    line-height: 25px;
+    margin-top:-25px;
+}
+.service2 .process-content{
+    height: auto;
+}
+.service2-list-item1{
+    padding-left: 15px;
+}
+.service2 .process-content p{
+    margin-bottom: 10px;
+}
+.service2-list-item1{
+    min-height: 350px;
+}
+.arrowtxt {
+    position: absolute;
+    left: 20px;
+    top: 13.3%;
+    font-weight: bold;
+
+}
+.service-list-item2 .img2{
+    width: 100%;
+    height: 206px;
+}
+.block_btn span, .rei_btn span{
+    top:7px;
+}
+.pmsimg{
+    float: right;
+    margin-right: 20px;
+}
+@media screen and (max-width: 767px){
+    .kaihatsu{
+        margin-top: 0px;
+    }
+    .pmsimg{
+        float: none;
+        margin-right: auto;
+    }
+    .sub-visual-txt {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .service2-list-item1:first-child .btn-wrapper {
+        width: 225px;
+    }
+    .service2-list-item1{
+        padding:10px 7px;
+        min-height: auto;
+    }
+    .service2 .process-content{
+        height: auto!important;
+    }
+    .service2 div {
+        line-height: 1.5!important;
+        margin-top:-10px!important;
+    }
+
+    .ittitle{
+        bottom: 30px;
+    }
+    .service2 .it-txt2 p,.service2 .it-txt3 p,.service2 .it-txt p{
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .anchor{
+        margin-top: -60px;
+        height: 65px;
+    }
+    .service-item .ttl-underline{margin-top:0px;}
+    .service-item{
+        padding:0 10px;
+    }
+    .service-item .service-list1{margin:0px;}
+    .service-list-item2{margin-bottom: 0px;}
+    .service-list1 .service-list-item2 .img1 {
+       margin : 10px auto;
+       height: 100px!important;
+    }
+    .service-list1 .service-list-item2 .img2 {
+        margin-top: 10px;
+        height: 180px!important ;
+    }
+    .service-list1 .service-list-item2 div{
+        display: inline-block;
+    }
+    .financial1{
+        margin: 20px 10px;
+        height: auto;
+        width: auto;
+    }
+    .ryu-btn-wrapper1{
+        width: auto;
+        margin-left: 10px;
+    }
+    .consulbtn{width: inherit;}
+    .block_btn span, .rei_btn span{
+        font-size: 16px;}
+    .RPA{
+        margin: 5px 10px 10px 10px;
+    }
+    .table-custom{background: #FFFFFF;}
+    .hanrei-txt1{padding: 15px;padding-bottom: 0px;text-align: left}
+    .hanrei-txt2{padding: 0 15px;text-align: left}
+    .Realization{padding: 15px 10px;}
+    .img_sc img{
+        width: 745px;
+        max-width: inherit;
+    }
+    .img_sc{
+        overflow: scroll;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    .ssi-item-txt{
+        font-size: 15px;
+    }
+    .ssiimg{
+        margin-bottom:0px;
+    }
+    .bt_160{width:160px;}
+    .mr0{margin: 20px 0px;}
+    .arrowtxt {
+        top: 53px !important;
+        left: 10px !important;
+        font-size: 18px;
+    }
+    .rei_btn span {
+    top: 10px!important;
+    }
+
+    .pmsdiv .rei_btn:after{
+            width: 165px;
+            transform: translateX(-92);
+        -webkit-transform: translateX(-92px);
+    }
+    .pmsdiv .btn{
+        width :155px;
+    }
+
+    .pmsdiv{text-align: center;}
+    .PmS-gradient-border{
+        height: 100%!important;   
+    }
+    .pmstxt{
+        margin: 0 auto!important;
+        padding:10px 15px;
+        width: 100%!important;
+        text-align: left;
+    }
+    .pmsimg{
+        margin:0 auto
+    }
+    .pm-ttl{
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+    .guidebtn{
+        width:60px!important;
+    }
+    .chart_img{
+        width: 100%;
+        overflow: scroll;
+    }
+    .chart_img img{
+        width:566px;
+        max-width: none;
+    }
+}
+@media (max-width: 375px){
+    .service2 div {
+        line-height: 1.5!important;
+        margin-top:-10px!important;
+    }
+    .service2 .it-txt,.service2 .it-txt2,.service2 .it-txt3{
+        margin-top: -10px!important;
+    }
+
+
+}

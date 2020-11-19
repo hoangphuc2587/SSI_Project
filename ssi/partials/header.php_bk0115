@@ -1,0 +1,24 @@
+<!-- Header -->
+<header>
+    <div class="navbar">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="./"> <img src="images/common/logo.png" alt="logo"> </a>
+            </h1>
+            <div class="nav-toggle">
+                <div class="nav-toggle-bar"></div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="navbar-item"><a href="#">SSIとは？</a></li>
+                    <li class="navbar-item"><a href="company.html">会社概要</a></li>
+                    <li class="navbar-item"><a href="#">領域別ソリューション </a></li>
+                    <li class="navbar-item"><a href="#">SSIのサービス </a></li>
+                    <li class="navbar-item"><a href="#">製品情報 </a></li>
+                    <li class="navbar-item"><a href="news.php">新着情報 </a></li>
+                    <li class="navbar-item"><a href="contact.php">お問い合わせ </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

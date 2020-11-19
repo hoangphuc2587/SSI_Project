@@ -1,0 +1,75 @@
+@charset "UTF-8";
+.ssi-list-item{
+	position: relative;
+}
+.ssi-list .ssi-des{
+	position: absolute;
+	top: 0px;
+	padding:15px 14px;
+	width: 100%;
+	height: 100%;
+}
+.ssi-list-item:hover .ssi-des{
+	display: block;
+}
+.common-product-item{
+	/*max-width: 1170px;*/
+	margin:0 auto;
+	display: block;
+}
+.common-product .pmsquet{
+	float: right;
+	width: 60%;
+	margin-bottom: 65px;
+}
+.common-product .sgs{
+	width: 60%;
+	float: left;
+}
+.topics{
+	/*padding-bottom: 85px;*/
+}
+.common-product .pmsquet .btn-wrapper{
+	right: 20%;
+}
+.common-product .sgs .btn-wrapper{
+	left: 20%;
+}
+.common-product .sgs .bg-sgs .img img{
+	margin-left: 0px;
+	max-height: 100%;
+}
+.common-product .common-product-item-info{
+	width: 63%;
+}
+.common-product .sgs .bg-sgs .img {
+	margin-left: 15px;
+}
+.common-product:after {
+	content: '';
+	height: 68%;
+	position: absolute;
+	bottom: -7px;
+	left: 0;
+	width: 100%;
+}
+.index .common-product{
+	padding-bottom: 25px;
+}
+.bg-sgs .common-product-item-content{
+	justify-content: flex-end;
+}
+@media screen and (max-width: 767px){
+	.topics .datetime {
+	margin-bottom: 0px;
+	}
+	.topics{
+		background: none;
+	}
+	.index .common-product{
+		padding-bottom: 0px;
+	}
+	.btn span{
+		top:8px;
+	}
+}

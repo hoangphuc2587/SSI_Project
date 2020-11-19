@@ -1,0 +1,126 @@
+/*----IE 10 & IE 11 Browser CSS Start----*/
+@media all and (-ms-high-contrast: none) {
+  //   body {
+  //     background-color: purple;
+  //   }
+  /* IE10 */
+  *::-ms-backdrop,
+  .btn:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background: linear-gradient(
+      150deg,
+      #35c4ea 0%,
+      #35c4ea 20%,
+      #8fca70 71%,
+      #8fca70 100%
+    );
+    height: 50px;
+    width: 450px;
+    transform: none;
+    transition: none;
+  }
+  *::-ms-backdrop,
+  .btn:hover:after {
+    -webkit-transform: unset;
+    transform: unset;
+  }
+  *::-ms-backdrop,
+  .btn {
+    transition: all 0.2s ease;
+  }
+  *::-ms-backdrop,
+  .news .news-list-ttl {
+    padding-left: 35px;
+  }
+  *::-ms-backdrop,
+  .news .news-list-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  *::-ms-backdrop,
+  .news .news-list-img li {
+    margin-bottom: 30px;
+    width: calc(1 / 3 * 100% - (1 - 1 / 3) * 5px);
+  }
+  *::-ms-backdrop,
+  .recruit .job-hunting .right .txt {
+    margin-top: 65px;
+  }
+  *::-ms-backdrop,
+  .sol-it .process-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  *::-ms-backdrop,
+  .sol-it .process-list .process-list-item {
+    width: calc(1 / 3 * 100% - (1 - 1 / 3) * 30px);
+  }
+  *::-ms-backdrop,
+  .sol-it-list-item .right {
+    width: 47%;
+  }
+  *::-ms-backdrop,
+  .company .table .item span:first-child {
+    width: 130px;
+    margin-right: 13px;
+  }
+  *::-ms-backdrop,
+  .contact .infomation {
+    display: flex;
+    justify-content: space-around;
+  }
+  *::-ms-backdrop,
+  .contact .infomation .img {
+    width: 50%;
+  }
+  *::-ms-backdrop,
+  .contact .infomation .txt {
+    width: 50%;
+  }
+  *::-ms-backdrop,
+  .contact .infomation .txt p {
+    display: flex;
+  }
+  *::-ms-backdrop,
+  .contact .infomation .txt p span:first-child {
+    width: 80px;
+  }
+  *::-ms-backdrop,
+  .block-form table tr {
+    border-bottom: 1px dashed #dedede;
+    display: flex;
+    width: 836px;
+    justify-content: space-between;
+  }
+  *::-ms-backdrop,
+  .block-form table tr th {
+    width: 240px;
+  }
+  *::-ms-backdrop,
+  .block-form table tr td {
+    width: 596px;
+  }
+  *::-ms-backdrop,
+  .block-form table tr td .input {
+    width: 100%;
+  }
+  *::-ms-backdrop,
+  .contact .block-button {
+    margin-bottom: 50px;
+  }
+
+  /* IE11 */
+}
+/*----IE 10 & IE 11 Browser CSS End----*/
+
+/*----MS Edge Browser CSS Start----*/
+@supports (-ms-ime-align: auto) {
+  //   body {
+  //     background-color: red;
+  //   }
+}
+/*----MS Edge Browser CSS End----*/

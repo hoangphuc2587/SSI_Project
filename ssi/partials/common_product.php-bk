@@ -1,0 +1,67 @@
+<!-- common product -->
+<section class="common-product bg-light">
+      <h2 class="ttl-underline"><span>SSIの製品</span></h2>
+      <p class="common-product-txt">SSIの独自開発のツールを、マネジメントや業務効率化にご活用いただけます。</p>
+      <div class="common-product-item">
+        <div class="pmsquet">
+          <div class="gradient-border"></div>
+          <div class="bg-pmsquet">
+            <div class="common-product-item-content pmsqet">
+              <div class="img">
+                <img class="pc" src="images/index/pmsqet.png" alt="PmSQETs">
+                <img class="sp" src="images/index/pmsqet_sp.png" alt="PmSQETs">
+              </div>
+              <p class="common-product-item-info">
+                ソフトウエア高速開発の時代に業務フロー中心設計技法による設計自動生成、トレーサビリティ環境構築を行う高速設計・開発ソリューション
+              </p>
+              <p class="btn-wrapper absolute">
+                <a href="#" class="btn"><span>PmSQETsとは？</span></a>
+                <span class="btn-border"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="common-product-item left pc">
+        <div class="sgs">
+          <div class="gradient-border"></div>
+          <div class="bg-sgs">
+            <div class="common-product-item-content ">
+              <div class="img sp">
+                <img class="pc" src="images/index/sgs.png" alt="sgs">
+                <img class="sp" src="images/index/sgs_sp.png" alt="sgs">
+              </div>
+              <p class="common-product-item-info">
+                デジタル採点とは、紙の答案をスキャナーで読み取り、画像データ化したものに、パソコンの画面上で○・× をつけていく採点方式です。
+              </p>
+              <div class="img pc">
+                <img src="images/index/sgs.png" alt="sgs">
+              </div>
+              <p class="btn-wrapper absolute">
+                <a href="#" class="btn"><span>SGSとは？</span></a>
+                <span class="btn-border"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="common-product-item left sp">
+        <div class="sgs">
+          <div class="gradient-border"></div>
+          <div class="bg-sgs">
+            <div class="common-product-item-content sgss">
+              <div class="img">
+                <img src="images/index/sgs.png" alt="sgs">
+              </div>
+              <p class="common-product-item-info">
+              デジタル採点とは、紙の答案をスキャナーで読み取り、画像データ化したものに、パソコンの画面上で○・× をつけていく採点方式です。
+              </p>
+              <p class="btn-wrapper absolute">
+                <a href="#" class="btn"><span>SGSとは？</span></a>
+                <span class="btn-border"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,13 @@
+#AuthType Basic
+#AuthName "Input your ID and Password."
+#AuthUserFile /var/www/ssi/.htpasswd
+#require valid-user
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteBase /
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ErrorDocument 404 /404.php
