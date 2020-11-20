@@ -10,8 +10,15 @@
             </div>
             <nav class="nav navi-pc">
                 <ul class="navbar-nav">
-                    <li class="navbar-item ">
-                        <a href="/about.php">SSIとは？</a>
+                    <li class="navbar-item dropdown">
+                        <a href="#">SSIとは？ </a>
+                        <div class="dropdown-menu" style="display: none;">
+                            <ul class="dropdown-menu-child">
+                                <li><a class="" href="/about.php">SSIとは</a></li>
+                                <li><a class="" href="/kurashi.php">暮らしを支えるSSI</a></li>
+                                <li><a class="" href="/sdgs.php">SDGsへの取り組み</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navbar-item"><a href="/company.php">会社案内</a></li>
                     <li class="navbar-item dropdown">
@@ -41,9 +48,16 @@
             </nav>
             <nav class="nav navi-sp">
                 <ul class="navbar-nav">
-                    <li class="navbar-item-sp ">
-                        <a href="/about.php">SSIとは？</a>
-                    </li>
+                    <li class="navbar-item-sp">
+                        <a href="#">SSIとは？ </a>
+                        <div class="naviExtra" style="display: none;">
+                            <ul class="dropdown-menu-child">
+                                <li class="navbar-item-sp submenu"><a class="" href="/about.php">SSIとは</a></li>
+                                <li class="navbar-item-sp submenu"><a class="" href="/kurashi.php">暮らしを支えるSSI</a></li>
+                                <li class="navbar-item-sp submenu"><a class="" href="/sdgs.php">SDGsへの取り組み</a></li>
+                            </ul>
+                        </div>
+                    </li>                    
                     <li class="navbar-item-sp"><a href="/company.php">会社案内</a></li>
                     <li class="navbar-item-sp">
                         <a href="#">領域別ソリューション </a>
