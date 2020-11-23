@@ -1,0 +1,407 @@
+#viewport {
+    width:1170px;
+    height:auto;
+    cursor:move;
+    overflow:initial;
+    position:relative;
+    float:left;
+    padding: 150px 0px 100px;
+}
+
+.kurashi-content{
+  position: relative;
+  overflow: initial;
+}
+
+.kurashi .process{
+    background: url(../images/kurashi/bg_all.png) center center no-repeat;
+    background-size: cover; 
+    height: 654px;
+}
+
+.map-control {
+    display:block !important;
+    position:static !important;
+}
+.btn_prev {
+    position:absolute;
+    left:0;
+    top:427px;
+    z-index:9999;
+}
+.btn_next {
+    position:absolute;
+    right:0;
+    top:427px;
+    z-index:9999;
+}
+.btn_down {
+    position:absolute;
+    left:378px;
+    bottom:0;
+    z-index:9999;
+}
+.btn_up {
+    position:absolute;
+    left:364px;
+    top:0;
+    z-index:9999;
+}
+.map-control .right {
+    float:none;
+    width:auto;
+}
+.btn_prev a:hover,
+.btn_next a:hover,
+.btn_down a:hover,
+.btn_up a:hover {
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+}
+.mark01{
+    position:absolute;
+    left: 589px;
+    top: 73px;
+    z-index: 999;
+}
+.mark02{
+    position:absolute;
+    left: 522px;
+    top: 535px;
+    z-index: 999;
+}
+.mark03{
+    position:absolute;
+    left: 116px;
+    top: 579px;
+    z-index: 999;    
+}
+.mark04{
+    position:absolute;
+    left: 422px;
+    top: 760px;
+    z-index: 999;    
+}
+.mark05{
+    position:absolute;
+    left: 652px;
+    top: 606px;
+    z-index: 999;    
+}
+.mark06{
+    position:absolute;
+    left: 848px;
+    top: 697px;
+    z-index: 999;    
+}
+.mark07{
+    position:absolute;
+    left: 684px;
+    top: 487px;
+    z-index: 999;    
+}
+.mark08{
+    position:absolute;
+    left: 830px;
+    top: 546px;
+    z-index: 999;    
+}
+.mark09{
+    position:absolute;
+    left: 616px;
+    top: 825px;
+    z-index: 999;    
+}
+.mark10{
+    position:absolute;
+    left: 388px;
+    top: 635px;
+    z-index: 999;    
+}
+.tooltip {
+    position:relative;
+}
+.tooltip span {
+    position:absolute;
+    top:-35px;
+    left:40px;
+    background-color:#0024BF;
+    color:#FFF;
+    text-align:center;
+    padding:10px;
+    z-index:2;
+    display:none;
+    width:100px;
+    font-size:10px;
+}
+
+.info01{
+   position: absolute;
+   right: -190px;
+   top: 634px;
+}
+
+.info02{
+   position: absolute;
+   left: 205px;
+   top: 64px;  
+}
+
+.info03{
+    position: absolute;
+    left: 670px;
+    top: 116px;
+}
+
+.info04{
+    position: absolute;
+    right: -166px;
+    top: 117px;
+}
+
+.info05{
+    position: absolute;
+    left: -140px;
+    top: 408px;
+}
+
+
+.info06{
+    position: absolute;
+    left: -130px;
+    top: 605px;
+}
+
+.info07{
+   position: absolute;
+   left: -157px;
+   top: 670px; 
+}
+
+.info08{
+    position: absolute;
+    left: 217px;
+    top: 837px; 
+}
+
+.info09{
+    position: absolute;
+    left: 663px;
+    top: 864px;
+}
+
+.info10{
+    position: absolute;
+    right: -193px;
+    top: 723px;
+}
+
+
+.cboxElement:hover{
+   opacity: 0.7;
+}    
+
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxClose{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+#colorbox{left:50% !important; margin-left:-395px !important;}
+#cboxContent{
+    overflow: visible;
+    border-radius: 8px;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+#cboxContent p{
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #383938;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    min-height: 200px;
+}
+
+#cboxContent .logo{
+    margin-left: 20px;
+}
+
+#cboxContent .image-item{  
+    text-align: center;
+    margin: auto;  
+}
+
+
+/*#cboxLoadingOverlay{background:url(/images/kurashi/loading_background.png) no-repeat center center;}*/
+/*#cboxLoadingGraphic{background:url(/images/kurashi/loading.gif) no-repeat center center;}*/
+/*#cboxClose{position:absolute; top:5px; background:url(/images/kurashi/close_off.png) no-repeat left top; width:70px; height:30px; text-indent:-9999px; right:35px;}*/
+/*#cboxClose:hover{background:url(/images/kurashi/close_on.png);}*/
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxTitle, #cboxCurrent{display:none;}
+.box_inn{
+    padding: 30px;
+    color:#fff;
+    font-size:14px;
+    line-height:1.8;
+}
+.box_inn .img{
+    float:right;
+    border:4px solid #fff;
+    margin:0 0 15px 20px;
+}
+.box_inn h2{
+    font-size:28px;
+    margin-bottom:20px;
+    line-height:1;
+}
+.wrap_fields{
+    position: absolute;
+    top: 258px;
+    right: -150px;
+    /*display: block!important;*/
+    width: 445px;
+    height: 256px;
+    border: 4px solid;
+    border-color: #8fca70;
+    -o-border-image: linear-gradient(120deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+    border-image: linear-gradient(120deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+    border-image-slice: 1;
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 20px;
+}
+
+.field_content{
+    color: #383938;
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+    padding: 7px 0px 10px 0px; 
+}
+
+
+.field_title a{
+    padding: 4px 8px 4px 15px;
+    color:#ffffff;
+    font-size: 16px;
+    position: relative;
+}
+
+.fields_inner .active{
+   opacity: 0.5;
+}
+.field_title a:before{
+    content: "";
+    position: absolute;
+    top:0px;
+    right: -30px;
+    width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+
+}
+
+.field_title_1{
+    border-bottom: 1px solid #e96188;
+}
+.field_title_1 a{
+
+    background: #e96188;
+}
+.field_title_1 a:before{
+    border-bottom: 29px solid #e96188;
+}
+
+.field_title_1 span{
+   margin-right: 30px;
+}
+
+.field_title_2{
+    border-bottom:1px solid #f7b10a;
+}
+.field_title_2 a{
+
+    background: #f7b10a;
+}
+.field_title_2 a:before{
+    border-bottom: 29px solid #f7b10a;
+}
+
+
+.field_title_3{
+    border-bottom:1px solid #4e9bd5;
+}
+.field_title_3 a{
+
+    background: #4e9bd5;
+}
+.field_title_3 a:before{
+    border-bottom: 29px solid #4e9bd5;
+}
+
+.field_title_3 span{
+   margin-right: 50px;
+}
+
+.common-contact, footer{
+    float: left;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .kurashi .process{
+        overflow: auto;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 992px){
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+}
