@@ -1,6 +1,6 @@
 
-jQuery(document).ready(function() {
-    // jQuery("#viewport").mapbox();
+jQuery(document).ready(function() {	
+    jQuery("#viewport").mapbox();
     jQuery(".map-control a").click(function() {
 		var viewport = $("#viewport");
 		if(this.className == "back") {
@@ -26,7 +26,13 @@ jQuery(document).ready(function() {
 });
 
 $(document).ready(function(){
-    $(".inline").colorbox({inline:true, width:"750px", height:"400px"});
+	if( jQuery(window).width() > 767 ) {
+		$(".inline").colorbox({inline:true, width:"750px", height:"400px"});
+	}
+	else{
+        $(".inline").colorbox({inline:true, width:"100%", height:"auto"});
+	}
+    
 });
 
 // $(function(){

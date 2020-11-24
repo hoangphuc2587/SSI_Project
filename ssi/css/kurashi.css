@@ -1,22 +1,27 @@
 #viewport {
-    width:1170px;
-    height:auto;
-    cursor:move;
-    overflow:initial;
+    width: 784px;
+    height: 914px;
+    cursor:move;    
     position:relative;
     float:left;
     padding: 150px 0px 100px;
+    overflow: initial !important;
 }
 
 .kurashi-content{
   position: relative;
-  overflow: initial;
+  /*overflow: initial;*/
+}
+
+.kurashi-content a{
+    outline: none;
+    box-shadow: none;
 }
 
 .kurashi .process{
     background: url(../images/kurashi/bg_all.png) center center no-repeat;
     background-size: cover; 
-    height: 654px;
+    padding-bottom: 100px;
 }
 
 .map-control {
@@ -62,61 +67,61 @@
 .mark01{
     position:absolute;
     left: 589px;
-    top: 73px;
+    top: -83px;
     z-index: 999;
 }
 .mark02{
     position:absolute;
     left: 522px;
-    top: 535px;
+    top: 385px;
     z-index: 999;
 }
 .mark03{
     position:absolute;
     left: 116px;
-    top: 579px;
+    top: 419px;
     z-index: 999;    
 }
 .mark04{
     position:absolute;
     left: 422px;
-    top: 760px;
+    top: 610px;
     z-index: 999;    
 }
 .mark05{
     position:absolute;
     left: 652px;
-    top: 606px;
+    top: 456px;
     z-index: 999;    
 }
 .mark06{
     position:absolute;
     left: 848px;
-    top: 697px;
+    top: 547px;
     z-index: 999;    
 }
 .mark07{
     position:absolute;
     left: 684px;
-    top: 487px;
+    top: 337px;
     z-index: 999;    
 }
 .mark08{
     position:absolute;
     left: 830px;
-    top: 546px;
+    top: 386px;
     z-index: 999;    
 }
 .mark09{
     position:absolute;
     left: 616px;
-    top: 825px;
+    top: 675px;
     z-index: 999;    
 }
 .mark10{
     position:absolute;
     left: 388px;
-    top: 635px;
+    top: 485px;
     z-index: 999;    
 }
 .tooltip {
@@ -137,64 +142,126 @@
 }
 
 .info01{
-   position: absolute;
-   right: -190px;
-   top: 634px;
+    position: absolute;
+    right: -190px;
+    top: 600px;
 }
 
 .info02{
    position: absolute;
    left: 205px;
-   top: 64px;  
+   top: -86px;  
 }
 
 .info03{
     position: absolute;
     left: 670px;
-    top: 116px;
+    top: -34px;
 }
 
 .info04{
     position: absolute;
     right: -166px;
-    top: 117px;
+    top: -33px;
 }
 
 .info05{
     position: absolute;
     left: -140px;
-    top: 408px;
+    top: 258px;
 }
 
 
 .info06{
     position: absolute;
     left: -130px;
-    top: 605px;
+    top: 535px;
 }
 
 .info07{
-   position: absolute;
-   left: -157px;
-   top: 670px; 
+    position: absolute;
+    left: -157px;
+    top: 773px; 
 }
 
 .info08{
     position: absolute;
     left: 217px;
-    top: 837px; 
+    top: 773px;
 }
 
 .info09{
-    position: absolute;
+position: absolute;
     left: 663px;
-    top: 864px;
+    top: 773px;
 }
 
 .info10{
     position: absolute;
     right: -193px;
-    top: 723px;
+    top: 773px;
+}
+
+
+.line01{
+    position: absolute;
+    right: 14px;
+    top: 484px;
+}
+
+.line02{
+    position: absolute;
+    left: 544px;
+    top: -67px; 
+}
+
+.line03{
+    position: absolute;
+    left: 749px;
+    top: 75px;
+}
+
+.line04{
+    position: absolute;
+    right: -7px;
+    top: 79px;
+}
+
+.line05{
+    position: absolute;
+    left: 188px;
+    top: 313px
+}
+
+
+.line06{
+    position: absolute;
+    left: 3px;
+    top: 450px;
+}
+
+.line07{
+    position: absolute;
+    left: 160px;
+    top: 520px;
+}
+
+.line08{
+    position: absolute;
+    left: 450px;
+    top: 687px;
+}
+
+.line09{
+    position: absolute;
+    left: 663px;
+    top: 714px;
+}
+
+.line10{
+    position: absolute;
+    right: -15px;
+    top: 580px;
 }
 
 
@@ -208,7 +275,7 @@
 #cboxContent{position:relative;}
 #cboxLoadedContent{overflow:auto;}
 #cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
-#cboxClose{cursor:pointer;}
+#cboxClose{cursor:pointer;display: none !important;}
 .cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
 #colorbox{left:50% !important; margin-left:-395px !important;}
 #cboxContent{
@@ -266,7 +333,7 @@
 }
 .wrap_fields{
     position: absolute;
-    top: 258px;
+    top: 108px;
     right: -150px;
     /*display: block!important;*/
     width: 445px;
@@ -361,12 +428,6 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-    .kurashi .process{
-        overflow: auto;
-    }
-}
-
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -404,4 +465,55 @@
     max-width: 50%;
   }
 
+}
+
+@media only screen and (min-width: 1600px) {
+    .kurashi-content{
+        max-width: 1600px;
+    }
+    #viewport {
+        width: 1600px;
+        height: 1090px;
+        cursor:move;    
+        position:relative;
+        float:left;
+        padding: 150px 0px 100px;
+        overflow: initial !important;
+    }
+
+    .current-map-layer{
+        top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .kurashi .process{
+        overflow: auto;
+         padding-top: 145px;
+    }
+
+    .kurashi-content{
+      position: relative;
+      overflow: initial;
+    }
+
+    #viewport {
+        width: 784px;
+        height: 914px;
+        cursor:move;
+        overflow:initial;
+        position:relative;
+        float:left;
+        padding: 150px 0px 100px;
+    }
+
+    #colorbox{margin-left:-195px !important;}
+
+    #cboxContent p{
+        min-height: unset;
+    }
+
+    #cboxContent .image-item{
+        padding-top: 50px;
+    }
 }

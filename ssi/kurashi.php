@@ -52,64 +52,75 @@
        <!-- Process -->
         <section class="process">
             <div class="container kurashi-content">
-                <div id="viewport">
-                    <div>
-                        <img src="images/kurashi/map_img.png" alt="" />
-                    </div>  
-            
-                    <div class="mark01 red"><p class="tooltip"><a href="#inline_content01" class="inline"><img src="images/kurashi/building.png" width="60" height="73" alt="" /></a></p></div>
-                    <div class="mark02 blue"><p class="tooltip"><a href="#inline_content02" class="inline"><img src="images/kurashi/education001.png" width="60" height="74" alt="" /></a></p></div>
-                    <div class="mark03 blue"><p class="tooltip"><a href="#inline_content03" class="inline"><img src="images/kurashi/education002.png" width="60" height="74" alt="" /></a></p></div>
-                    <div class="mark04 blue"><p class="tooltip"><a href="#inline_content04" class="inline"><img src="images/kurashi/education003.png" width="60" height="73" alt="" /></a></p></div>
-                    <div class="mark05 yellow"><p class="tooltip"><a href="#inline_content05" class="inline"><img src="images/kurashi/financial.png" width="60" height="73" alt="" /></a></p></div>
-                    <div class="mark06 red"><p class="tooltip"><a href="#inline_content06" class="inline"><img src="images/kurashi/medical.png" width="60" height="74" alt="" /></a></p></div>
-                    <div class="mark07 yellow"><p class="tooltip"><a href="#inline_content07" class="inline"><img src="images/kurashi/merchandise001.png" width="60" height="73" alt="" /></a></p></div>
-                    <div class="mark08 yellow"><p class="tooltip"><a href="#inline_content08" class="inline"><img src="images/kurashi/merchandise002.png" width="60" height="74" alt="" /></a></p></div>
-                    <div class="mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" width="60" height="74" alt="" /></a></p></div>
-                    <div class="mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" width="60" height="74" alt="" /></a></p></div>
+                <div id="viewport">                    
+                    <div style="background:url(images/kurashi/map_img.png) no-repeat; width:1168px; height:910px;background-size: 1168px 910px;margin: 150px;">
+                        <div class="mark01 red"><p class="tooltip"><a href="#inline_content01" class="inline"><img src="images/kurashi/building.png" width="60" height="73" alt="" /></a></p></div>
+                        <div class="mark02 blue"><p class="tooltip"><a href="#inline_content02" class="inline"><img src="images/kurashi/education001.png" width="60" height="74" alt="" /></a></p></div>
+                        <div class="mark03 blue"><p class="tooltip"><a href="#inline_content03" class="inline"><img src="images/kurashi/education002.png" width="60" height="74" alt="" /></a></p></div>
+                        <div class="mark04 blue"><p class="tooltip"><a href="#inline_content04" class="inline"><img src="images/kurashi/education003.png" width="60" height="73" alt="" /></a></p></div>
+                        <div class="mark05 yellow"><p class="tooltip"><a href="#inline_content05" class="inline"><img src="images/kurashi/financial.png" width="60" height="73" alt="" /></a></p></div>
+                        <div class="mark06 red"><p class="tooltip"><a href="#inline_content06" class="inline"><img src="images/kurashi/medical.png" width="60" height="74" alt="" /></a></p></div>
+                        <div class="mark07 yellow"><p class="tooltip"><a href="#inline_content07" class="inline"><img src="images/kurashi/merchandise001.png" width="60" height="73" alt="" /></a></p></div>
+                        <div class="mark08 yellow"><p class="tooltip"><a href="#inline_content08" class="inline"><img src="images/kurashi/merchandise002.png" width="60" height="74" alt="" /></a></p></div>
+                        <div class="mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" width="60" height="74" alt="" /></a></p></div>
+                        <div class="mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" width="60" height="74" alt="" /></a></p></div>
 
-                    <div class="info01 yellow"><img src="images/kurashi/title-1.png" alt="" /></div>
-                    <div class="info02 red"><img src="images/kurashi/title-2.png" alt="" /></div>
-                    <div class="info03 yellow"><img src="images/kurashi/title-3.png" alt="" /></div>
-                    <div class="info04 yellow"><img src="images/kurashi/title-4.png" alt="" /></div>
-                    <div class="info05 blue"><img src="images/kurashi/title-5.png" alt="" /></div>
-                    <div class="info06 blue"><img src="images/kurashi/title-6.png" alt="" /></div>
-                    <div class="info07 red"><img src="images/kurashi/title-7.png" alt="" /></div>
-                    <div class="info08 blue"><img src="images/kurashi/title-8.png" alt="" /></div>
-                    <div class="info09 red"><img src="images/kurashi/title-9.png" alt="" /></div>
-                    <div class="info10 red"><img src="images/kurashi/title-10.png" alt="" /></div>
-                    <div class="wrap_fields">
-                        <div class="field_item">
-                            <div class="fields_inner">
-                                <div class="field_title field_title_1">
-                                    <a href="javascript:void(0);" data-id="red" class="category system01"><span>製造IT分野</span></a>
-                                </div>
-                                <div class="field_content">
-                                    日本のものづくりを支える製造業を支援
+                        <div class="info01 yellow"><a href="#inline_content05" class="inline"><img src="images/kurashi/003.png" alt="" /></a></div>
+                        <div class="info02 red"><a href="#inline_content01" class="inline"><img src="images/kurashi/009.png" alt="" /></a></div>
+                        <div class="info03 yellow"><a href="#inline_content07" class="inline"><img src="images/kurashi/001.png" alt="" /></a></div>
+                        <div class="info04 yellow"><a href="#inline_content08" class="inline"><img src="images/kurashi/002.png" alt="" /></a></div>
+                        <div class="info05 blue"><a href="#inline_content02" class="inline"><img src="images/kurashi/006.png" alt="" /></a></div>
+                        <div class="info06 blue"><a href="#inline_content03" class="inline"><img src="images/kurashi/005.png" alt="" /></a></div>
+                        <div class="info07 red"><a href="#inline_content10" class="inline"><img src="images/kurashi/010.png" alt="" /></a></div>
+                        <div class="info08 blue"><a href="#inline_content04" class="inline"><img src="images/kurashi/004.png" alt="" /></a></div>
+                        <div class="info09 red"><a href="#inline_content09" class="inline"><img src="images/kurashi/008.png" alt="" /></a></div>
+                        <div class="info10 red"><a href="#inline_content06" class="inline"><img src="images/kurashi/007.png" alt="" /></a></div>
+
+                        <div class="line01 yellow"><img src="images/kurashi/arrow003.png" alt="" /></div>
+                        <div class="line02 red"><img src="images/kurashi/arrow009.png" alt="" /></div>
+                        <div class="line03 yellow"><img src="images/kurashi/arrow001.png" alt="" /></div>
+                        <div class="line04 yellow"><img src="images/kurashi/arrow002.png" alt="" /></div>
+                        <div class="line05 blue"><img src="images/kurashi/arrow006.png" alt="" /></div>
+                        <div class="line06 blue"><img src="images/kurashi/arrow005.png" alt="" /></div>
+                        <div class="line07 red"><img src="images/kurashi/arrow010.png" alt="" /></div>
+                        <div class="line08 blue"><img src="images/kurashi/arrow004.png" alt="" /></div>
+                        <div class="line09 red"><img src="images/kurashi/arrow008.png" alt="" /></div>
+                        <div class="line10 red"><img src="images/kurashi/arrow007.png" alt="" /></div>
+
+                        <div class="wrap_fields">
+                            <div class="field_item">
+                                <div class="fields_inner">
+                                    <div class="field_title field_title_1">
+                                        <a href="javascript:void(0);" data-id="red" class="category system01"><span>製造IT分野</span></a>
+                                    </div>
+                                    <div class="field_content">
+                                        日本のものづくりを支える製造業を支援
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="field_item">
-                            <div class="fields_inner">
-                                <div class="field_title field_title_2">
-                                    <a href="javascript:void(0);" data-id="yellow" class="category system02"><span>流通・金融分野</span></a>
-                                </div>
-                                <div class="field_content">
-                                    日々の暮らしを今よりもっと快適に
+                            <div class="field_item">
+                                <div class="fields_inner">
+                                    <div class="field_title field_title_2">
+                                        <a href="javascript:void(0);" data-id="yellow" class="category system02"><span>流通・金融分野</span></a>
+                                    </div>
+                                    <div class="field_content">
+                                        日々の暮らしを今よりもっと快適に
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="field_item">
-                            <div class="fields_inner">
-                                <div class="field_title field_title_3">
-                                    <a href="javascript:void(0);" data-id="blue" class="category system03"><span>教育分野</span></a>
-                                </div>
-                                <div class="field_content">
-                                    日々進化する教育業界を担う
+                            <div class="field_item">
+                                <div class="fields_inner">
+                                    <div class="field_title field_title_3">
+                                        <a href="javascript:void(0);" data-id="blue" class="category system03"><span>教育分野</span></a>
+                                    </div>
+                                    <div class="field_content">
+                                        日々進化する教育業界を担う
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div style="width:1168px; height:910px;"><img src="images/kurashi/map_img.png" alt="" /></div> 
                 </div>
             </div>
         
