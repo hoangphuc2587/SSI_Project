@@ -65,28 +65,6 @@
                         <div class="mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" width="60" height="74" alt="" /></a></p></div>
                         <div class="mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" width="60" height="74" alt="" /></a></p></div>
 
-                        <div class="info01 yellow"><a href="#inline_content05" class="inline"><img src="images/kurashi/003.png" alt="" /></a></div>
-                        <div class="info02 red"><a href="#inline_content01" class="inline"><img src="images/kurashi/009.png" alt="" /></a></div>
-                        <div class="info03 yellow"><a href="#inline_content07" class="inline"><img src="images/kurashi/001.png" alt="" /></a></div>
-                        <div class="info04 yellow"><a href="#inline_content08" class="inline"><img src="images/kurashi/002.png" alt="" /></a></div>
-                        <div class="info05 blue"><a href="#inline_content02" class="inline"><img src="images/kurashi/006.png" alt="" /></a></div>
-                        <div class="info06 blue"><a href="#inline_content03" class="inline"><img src="images/kurashi/005.png" alt="" /></a></div>
-                        <div class="info07 red"><a href="#inline_content10" class="inline"><img src="images/kurashi/010.png" alt="" /></a></div>
-                        <div class="info08 blue"><a href="#inline_content04" class="inline"><img src="images/kurashi/004.png" alt="" /></a></div>
-                        <div class="info09 red"><a href="#inline_content09" class="inline"><img src="images/kurashi/008.png" alt="" /></a></div>
-                        <div class="info10 red"><a href="#inline_content06" class="inline"><img src="images/kurashi/007.png" alt="" /></a></div>
-
-                        <div class="line01 yellow"><img src="images/kurashi/arrow003.png" alt="" /></div>
-                        <div class="line02 red"><img src="images/kurashi/arrow009.png" alt="" /></div>
-                        <div class="line03 yellow"><img src="images/kurashi/arrow001.png" alt="" /></div>
-                        <div class="line04 yellow"><img src="images/kurashi/arrow002.png" alt="" /></div>
-                        <div class="line05 blue"><img src="images/kurashi/arrow006.png" alt="" /></div>
-                        <div class="line06 blue"><img src="images/kurashi/arrow005.png" alt="" /></div>
-                        <div class="line07 red"><img src="images/kurashi/arrow010.png" alt="" /></div>
-                        <div class="line08 blue"><img src="images/kurashi/arrow004.png" alt="" /></div>
-                        <div class="line09 red"><img src="images/kurashi/arrow008.png" alt="" /></div>
-                        <div class="line10 red"><img src="images/kurashi/arrow007.png" alt="" /></div>
-
                         <div class="wrap_fields">
                             <div class="field_item">
                                 <div class="fields_inner">
@@ -142,7 +120,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
                             </div>
                         </div>    
                     </div>
@@ -166,7 +144,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/sgs.png" alt="" />  
+                                <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -192,7 +170,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/sgs.png" alt="" />  
+                               <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -216,7 +194,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/sgs.png" alt="" />  
+                                <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -240,7 +218,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -266,7 +244,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -290,7 +268,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
                             </div>
                         </div>    
                     </div>
@@ -314,7 +292,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
                             </div>
                         </div>    
                     </div>
@@ -338,7 +316,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
                             </div>
                         </div>    
                     </div>
@@ -362,7 +340,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <img src="images/kurashi/IPROS8838307424943006954.png" alt="" />  
+                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>  
                             </div>
                         </div>    
                     </div>
@@ -370,7 +348,8 @@
                         <img src="images/kurashi/train002.png" alt="" /> 
                     </div>
                 </div>
-            </div>           
+            </div>
+            <input type="hidden" name="hd_first" id="hd_first" value="0">           
         </div>
        
         <!-- common contact -->

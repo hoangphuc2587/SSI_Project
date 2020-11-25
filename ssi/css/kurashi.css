@@ -145,6 +145,7 @@
     position: absolute;
     right: -190px;
     top: 600px;
+    z-index: 9999;
 }
 
 .info02{
@@ -188,6 +189,7 @@
     position: absolute;
     left: 217px;
     top: 773px;
+    z-index: 9999;
 }
 
 .info09{

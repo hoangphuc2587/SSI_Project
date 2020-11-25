@@ -13,14 +13,38 @@ jQuery(document).ready(function() {
 	});
 
 	jQuery(".fields_inner .category").click(function() {
+		var first = jQuery("#hd_first").val();
 		var id = jQuery(this).attr("data-id");
-        jQuery( "." + id ).toggle();
-        if (jQuery(this).parent().hasClass("active")){
-        	jQuery(this).parent().removeClass("active");
-        }
-        else{
-        	jQuery(this).parent().addClass("active");
-        }
+		if (first == "1"){
+	        jQuery( "." + id ).toggle();
+	        if (jQuery(this).parent().hasClass("active")){
+	        	jQuery(this).parent().removeClass("active");
+	        }
+	        else{
+	        	jQuery(this).parent().addClass("active");
+	        }
+		}else{
+			if (id == "red"){
+				jQuery( ".yellow" ).toggle();
+				jQuery( ".blue" ).toggle();	
+				jQuery(".field_title_2").addClass("active");
+				jQuery(".field_title_3").addClass("active");
+			}
+			else if (id == "yellow"){			
+				jQuery( ".red" ).toggle();
+				jQuery( ".blue" ).toggle();
+				jQuery(".field_title_1").addClass("active");
+				jQuery(".field_title_3").addClass("active");
+			}
+			else if (id == "blue"){			
+				jQuery( ".red" ).toggle();
+				jQuery( ".yellow" ).toggle();		
+				jQuery(".field_title_1").addClass("active");
+				jQuery(".field_title_2").addClass("active");				
+			}
+			jQuery("#hd_first").val("1");
+		}		
+		
 	});
 
 });
