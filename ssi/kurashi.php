@@ -268,7 +268,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
+                                <!-- <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>  -->
                             </div>
                         </div>    
                     </div>
@@ -316,7 +316,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a> 
+                                <!-- <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>  -->
                             </div>
                         </div>    
                     </div>
@@ -340,7 +340,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>  
+                               <!--  <a href="/product_pms.php"><img src="images/kurashi/IPROS8838307424943006954.png" alt="" /></a>  --> 
                             </div>
                         </div>    
                     </div>
