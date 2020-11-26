@@ -27,18 +27,24 @@ jQuery(document).ready(function() {
 			if (id == "red"){
 				jQuery( ".yellow" ).toggle();
 				jQuery( ".blue" ).toggle();	
+				jQuery( ".info" ).toggle();
+				jQuery( ".line" ).toggle();
 				jQuery(".field_title_2").addClass("active");
 				jQuery(".field_title_3").addClass("active");
 			}
 			else if (id == "yellow"){			
 				jQuery( ".red" ).toggle();
 				jQuery( ".blue" ).toggle();
+				jQuery( ".info" ).toggle();
+				jQuery( ".line" ).toggle();
 				jQuery(".field_title_1").addClass("active");
 				jQuery(".field_title_3").addClass("active");
 			}
 			else if (id == "blue"){			
 				jQuery( ".red" ).toggle();
-				jQuery( ".yellow" ).toggle();		
+				jQuery( ".yellow" ).toggle();
+				jQuery( ".info" ).toggle();
+				jQuery( ".line" ).toggle();
 				jQuery(".field_title_1").addClass("active");
 				jQuery(".field_title_2").addClass("active");				
 			}

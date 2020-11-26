@@ -65,6 +65,28 @@
                         <div class="mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" width="60" height="74" alt="" /></a></p></div>
                         <div class="mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" width="60" height="74" alt="" /></a></p></div>
 
+                        <div class="info01 yellow info"><a href="#inline_content05" class="inline"><img src="images/kurashi/003.png" alt="" /></a></div>
+                        <div class="info02 red info"><a href="#inline_content01" class="inline"><img src="images/kurashi/009.png" alt="" /></a></div>
+                        <div class="info03 yellow info"><a href="#inline_content07" class="inline"><img src="images/kurashi/001.png" alt="" /></a></div>
+                        <div class="info04 yellow info"><a href="#inline_content08" class="inline"><img src="images/kurashi/002.png" alt="" /></a></div>
+                        <div class="info05 blue info"><a href="#inline_content02" class="inline"><img src="images/kurashi/006.png" alt="" /></a></div>
+                        <div class="info06 blue info"><a href="#inline_content03" class="inline"><img src="images/kurashi/005.png" alt="" /></a></div>
+                        <div class="info07 red info"><a href="#inline_content10" class="inline"><img src="images/kurashi/010.png" alt="" /></a></div>
+                        <div class="info08 blue info"><a href="#inline_content04" class="inline"><img src="images/kurashi/004.png" alt="" /></a></div>
+                        <div class="info09 red info"><a href="#inline_content09" class="inline"><img src="images/kurashi/008.png" alt="" /></a></div>
+                        <div class="info10 red info"><a href="#inline_content06" class="inline"><img src="images/kurashi/007.png" alt="" /></a></div>
+
+                        <div class="line01 yellow line"><img src="images/kurashi/arrow003.png" alt="" /></div>
+                        <div class="line02 red line"><img src="images/kurashi/arrow009.png" alt="" /></div>
+                        <div class="line03 yellow line"><img src="images/kurashi/arrow001.png" alt="" /></div>
+                        <div class="line04 yellow line"><img src="images/kurashi/arrow002.png" alt="" /></div>
+                        <div class="line05 blue line"><img src="images/kurashi/arrow006.png" alt="" /></div>
+                        <div class="line06 blue line"><img src="images/kurashi/arrow005.png" alt="" /></div>
+                        <div class="line07 red line"><img src="images/kurashi/arrow010.png" alt="" /></div>
+                        <div class="line08 blue line"><img src="images/kurashi/arrow004.png" alt="" /></div>
+                        <div class="line09 red line"><img src="images/kurashi/arrow008.png" alt="" /></div>
+                        <div class="line10 red line"><img src="images/kurashi/arrow007.png" alt="" /></div>                        
+
                         <div class="wrap_fields">
                             <div class="field_item">
                                 <div class="fields_inner">

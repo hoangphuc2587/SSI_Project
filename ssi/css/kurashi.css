@@ -146,30 +146,35 @@
     right: -190px;
     top: 600px;
     z-index: 9999;
+    display: none;
 }
 
 .info02{
    position: absolute;
    left: 205px;
-   top: -86px;  
+   top: -86px; 
+   display: none; 
 }
 
 .info03{
     position: absolute;
     left: 670px;
     top: -34px;
+    display: none;
 }
 
 .info04{
     position: absolute;
     right: -166px;
     top: -33px;
+    display: none;
 }
 
 .info05{
     position: absolute;
     left: -140px;
     top: 258px;
+    display: none;    
 }
 
 
@@ -177,12 +182,14 @@
     position: absolute;
     left: -130px;
     top: 535px;
+    display: none;    
 }
 
 .info07{
     position: absolute;
     left: -157px;
-    top: 773px; 
+    top: 773px;
+    display: none;    
 }
 
 .info08{
@@ -190,18 +197,21 @@
     left: 217px;
     top: 773px;
     z-index: 9999;
+    display: none;    
 }
 
 .info09{
-position: absolute;
+    position: absolute;
     left: 663px;
     top: 773px;
+    display: none;    
 }
 
 .info10{
     position: absolute;
     right: -193px;
     top: 773px;
+    display: none;    
 }
 
 
@@ -209,30 +219,35 @@ position: absolute;
     position: absolute;
     right: 14px;
     top: 484px;
+    display: none;     
 }
 
 .line02{
     position: absolute;
     left: 544px;
     top: -67px; 
+    display: none;
 }
 
 .line03{
     position: absolute;
     left: 749px;
     top: 75px;
+    display: none;    
 }
 
 .line04{
     position: absolute;
     right: -7px;
     top: 79px;
+    display: none;    
 }
 
 .line05{
     position: absolute;
     left: 188px;
-    top: 313px
+    top: 313px;
+    display: none;    
 }
 
 
@@ -240,30 +255,35 @@ position: absolute;
     position: absolute;
     left: 3px;
     top: 450px;
+    display: none;    
 }
 
 .line07{
     position: absolute;
     left: 160px;
     top: 520px;
+    display: none;    
 }
 
 .line08{
     position: absolute;
     left: 450px;
     top: 687px;
+    display: none;    
 }
 
 .line09{
     position: absolute;
     left: 663px;
     top: 714px;
+    display: none;    
 }
 
 .line10{
     position: absolute;
     right: -15px;
     top: 580px;
+    display: none;    
 }
 
 
