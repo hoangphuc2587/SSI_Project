@@ -70,26 +70,27 @@ $listNews = $newsController->getListNewsHome();
 
   <article class="mainvisual">
     <div class="mainvisual-slide pc">
-      <!-- <div class="mainvisual-slide-item">
-        <img src="images/index/mv01.jpg" alt="mv 01">
-      </div> -->
       <div class="mainvisual-slide-item">
-        <img src="images/index/mv02.jpg" alt="mv 02">
+        <a href ="product_pms.php"><img src="images/index/mv01.jpg" alt="mv 01"></a>
       </div>
       <div class="mainvisual-slide-item">
-        <a href ="product_sgs.php"><img src="images/index/mv03.jpg" alt="mv 03"></a>
+        <a href ="product_sgs.php"><img src="images/index/mv02.png" alt="mv 02"></a>
+      </div>
+      <div class="mainvisual-slide-item">
+        <a href ="kurashi.php"><img src="images/index/mv03.jpg" alt="mv 03"></a>
       </div>
     </div>
     <div class="mainvisual-slide sp">
-      <!-- <div class="mainvisual-slide-item">
-        <img src="images/index/mv01_sp.jpg" alt="mv 01">
-      </div> -->
       <div class="mainvisual-slide-item">
-        <img src="images/index/mv02_sp.jpg" alt="mv 02">
+        <a href ="product_pms.php"><img src="images/index/mv01_sp.jpg" alt="mv 01"></a>
+      </div>      
+      <div class="mainvisual-slide-item">
+        <a href ="product_sgs.php"><img src="images/index/mv02_sp.png" alt="mv 02"></a>
       </div>
       <div class="mainvisual-slide-item">
-        <a href ="product_sgs.php"><img class="imgwidth" src="images/index/mv03_sp.jpg" alt="mv 03"></a>
+        <a href ="kurashi.php"><img src="images/index/mv03_sp.jpg" alt="mv 03"></a>
       </div>
+     
     </div>
   </article>
 
