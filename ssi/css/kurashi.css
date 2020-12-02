@@ -3,8 +3,7 @@
     height: 914px;
     cursor:move;    
     position:relative;
-    float:left;
-    padding: 150px 0px 100px;
+    float:left;  
     overflow: initial !important;
 }
 
@@ -21,7 +20,7 @@
 .kurashi .process{
     background: url(../images/kurashi/bg_all.png) center center no-repeat;
     background-size: cover; 
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .map-control {
@@ -66,62 +65,62 @@
 }
 .mark01{
     position:absolute;
-    left: 589px;
-    top: -83px;
+    left: 643px;
+    top: -72px;
     z-index: 999;
 }
 .mark02{
     position:absolute;
-    left: 522px;
-    top: 385px;
+    left: 576px;
+    top: 430px;
     z-index: 999;
 }
 .mark03{
     position:absolute;
-    left: 116px;
-    top: 419px;
+    left: 146px;
+    top: 478px;
     z-index: 999;    
 }
 .mark04{
     position:absolute;
-    left: 422px;
-    top: 610px;
+    left: 456px;
+    top: 665px;
     z-index: 999;    
 }
 .mark05{
     position:absolute;
-    left: 652px;
-    top: 456px;
+    left: 712px;
+    top: 507px;
     z-index: 999;    
 }
 .mark06{
     position:absolute;
-    left: 848px;
-    top: 547px;
+    left: 916px;
+    top: 581px;
     z-index: 999;    
 }
 .mark07{
     position:absolute;
-    left: 684px;
-    top: 337px;
+    left: 739px;
+    top: 381px;
     z-index: 999;    
 }
 .mark08{
     position:absolute;
-    left: 830px;
-    top: 386px;
+    left: 901px;
+    top: 446px;
     z-index: 999;    
 }
 .mark09{
     position:absolute;
-    left: 616px;
-    top: 675px;
+    left: 682px;
+    top: 738px;
     z-index: 999;    
 }
 .mark10{
     position:absolute;
-    left: 388px;
-    top: 485px;
+    left: 419px;
+    top: 533px;
     z-index: 999;    
 }
 .tooltip {
@@ -143,7 +142,7 @@
 
 .info01{
     position: absolute;
-    right: -190px;
+    right: 0px;
     top: 600px;
     z-index: 9999;
     display: none;
@@ -151,65 +150,67 @@
 
 .info02{
    position: absolute;
-   left: 205px;
-   top: -86px; 
+   left: 290px;
+   top: -86px;
    display: none; 
 }
 
 .info03{
     position: absolute;
-    left: 670px;
-    top: -34px;
+    left: 550px;
+    top: 94px;
     display: none;
 }
 
 .info04{
     position: absolute;
-    right: -166px;
-    top: -33px;
+    right: 40px;
+    top: -52px;
     display: none;
 }
 
 .info05{
     position: absolute;
-    left: -140px;
-    top: 258px;
-    display: none;    
+    left: 0px;
+    top: 311px;
+    display: none;
+    z-index: 9999;
+
 }
 
 
 .info06{
     position: absolute;
-    left: -130px;
-    top: 535px;
+    left: 0px;
+    top: 593px;
     display: none;    
 }
 
 .info07{
     position: absolute;
-    left: -157px;
-    top: 773px;
+    left: 7px;
+    top: 713px;
     display: none;    
 }
 
 .info08{
     position: absolute;
-    left: 217px;
-    top: 773px;
+    left: 335px;
+    top: 824px;
     z-index: 9999;
     display: none;    
 }
 
 .info09{
     position: absolute;
-    left: 663px;
-    top: 773px;
+    left: 678px;
+    top: 904px;
     display: none;    
 }
 
 .info10{
     position: absolute;
-    right: -193px;
+    right: 6px;
     top: 773px;
     display: none;    
 }
@@ -217,72 +218,72 @@
 
 .line01{
     position: absolute;
-    right: 14px;
-    top: 484px;
+    right: 86px;
+    top: 533px;
     display: none;     
 }
 
 .line02{
     position: absolute;
-    left: 544px;
-    top: -67px; 
+    left: 600px;
+    top: -60px;
     display: none;
 }
 
 .line03{
     position: absolute;
-    left: 749px;
-    top: 75px;
+    left: 767px;
+    top: 184px;
     display: none;    
 }
 
 .line04{
     position: absolute;
-    right: -7px;
-    top: 79px;
+    right: 182px;
+    top: 44px;
     display: none;    
 }
 
 .line05{
     position: absolute;
-    left: 188px;
-    top: 313px;
+    left: 239px;
+    top: 358px;
     display: none;    
 }
 
 
 .line06{
     position: absolute;
-    left: 3px;
-    top: 450px;
+    left: 90px;
+    top: 508px;
     display: none;    
 }
 
 .line07{
     position: absolute;
-    left: 160px;
-    top: 520px;
+    left: 290px;
+    top: 562px;
     display: none;    
 }
 
 .line08{
     position: absolute;
-    left: 450px;
-    top: 687px;
+    left: 481px;
+    top: 736px;
     display: none;    
 }
 
 .line09{
     position: absolute;
-    left: 663px;
-    top: 714px;
+    left: 697px;
+    top: 769px;
     display: none;    
 }
 
 .line10{
     position: absolute;
-    right: -15px;
-    top: 580px;
+    right: 47px;
+    top: 607px;
     display: none;    
 }
 
@@ -338,7 +339,7 @@
 /*#cboxClose:hover{background:url(/images/kurashi/close_on.png);}*/
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxTopLeft, #cboxTopCenter, #cboxTopRight, #cboxBottomLeft, #cboxBottomCenter, #cboxBottomRight, #cboxMiddleLeft, #cboxMiddleRight, #cboxTitle, #cboxCurrent{display:none;}
 .box_inn{
-    padding: 30px;
+    padding: 20px;
     color:#fff;
     font-size:14px;
     line-height:1.8;
@@ -355,10 +356,10 @@
 }
 .wrap_fields{
     position: absolute;
-    top: 108px;
-    right: -150px;
+    top: 70px;
+    right: 0px;
     /*display: block!important;*/
-    width: 445px;
+    width: 390px;
     height: 256px;
     border: 4px solid;
     border-color: #8fca70;
@@ -373,7 +374,7 @@
 .field_content{
     color: #383938;
     font-family: "Hiragino Kaku Gothic Pro";
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
     letter-spacing: normal;
     line-height: 30px;
@@ -383,9 +384,9 @@
 
 
 .field_title a{
-    padding: 4px 8px 4px 15px;
-    color:#ffffff;
-    font-size: 16px;
+    padding: 6px 8px 5px 11px;
+    color: #ffffff;
+    font-size: 13px;
     position: relative;
 }
 
@@ -411,7 +412,7 @@
     background: #e96188;
 }
 .field_title_1 a:before{
-    border-bottom: 29px solid #e96188;
+    border-bottom: 28px solid #e96188;
 }
 
 .field_title_1 span{
@@ -466,6 +467,12 @@
     padding-left: 15px;
 }
 
+.line{
+    height: auto;
+    background: unset;
+    margin: unset;
+}
+
 @media screen and (min-width: 992px){
   .col-lg-6 {
     -ms-flex: 0 0 50%;
@@ -489,18 +496,24 @@
 
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1024px) {
     .kurashi-content{
-        max-width: 1600px;
+        max-width: 1024px;
+    }
+}    
+
+@media only screen and (min-width: 1280px) {
+    .kurashi-content{
+        max-width: 1280px;
     }
     #viewport {
-        width: 1600px;
-        height: 1090px;
+        width: 1263px;
+        height: 1040px;
         cursor:move;    
         position:relative;
-        float:left;
-        padding: 150px 0px 100px;
+        float:left;       
         overflow: initial !important;
+        margin-top: 150px;
     }
 
     .current-map-layer{

@@ -16,13 +16,40 @@ jQuery(document).ready(function() {
 		var first = jQuery("#hd_first").val();
 		var id = jQuery(this).attr("data-id");
 		if (first == "1"){
-	        jQuery( "." + id ).toggle();
-	        if (jQuery(this).parent().hasClass("active")){
-	        	jQuery(this).parent().removeClass("active");
-	        }
-	        else{
-	        	jQuery(this).parent().addClass("active");
-	        }
+			var oldActive = jQuery("#hd_active").val();
+			if (oldActive != id){
+				jQuery( "." + oldActive ).toggle();
+		        jQuery( "." + id ).toggle();
+		        if (jQuery(this).parent().hasClass("active")){
+		        	jQuery(this).parent().removeClass("active");
+		        }
+		        else{
+		        	jQuery(this).parent().addClass("active");
+		        }
+
+		        if (oldActive == 'red'){
+		        	jQuery(".field_title_1").addClass("active");
+		        }
+		        else if (oldActive == 'yellow'){
+		        	jQuery(".field_title_2").addClass("active");
+		        }
+		        else if (oldActive == 'blue'){
+		        	jQuery(".field_title_3").addClass("active");
+		        }
+			}else{
+                jQuery( "." + id ).toggle();
+                jQuery( ".mark-kurashi").toggle();
+                if (jQuery(".field_title_1").hasClass("active")){
+                	jQuery(".field_title_1").removeClass("active");
+                }
+                if (jQuery(".field_title_2").hasClass("active")){
+                	jQuery(".field_title_2").removeClass("active");
+                }
+                if (jQuery(".field_title_3").hasClass("active")){
+                	jQuery(".field_title_3").removeClass("active");
+                }
+                jQuery("#hd_first").val("0");
+			}			
 		}else{
 			if (id == "red"){
 				jQuery( ".yellow" ).toggle();
@@ -49,7 +76,8 @@ jQuery(document).ready(function() {
 				jQuery(".field_title_2").addClass("active");				
 			}
 			jQuery("#hd_first").val("1");
-		}		
+		}
+		jQuery("#hd_active").val(id);
 		
 	});
 
@@ -57,7 +85,7 @@ jQuery(document).ready(function() {
 
 $(document).ready(function(){
 	if( jQuery(window).width() > 767 ) {
-		$(".inline").colorbox({inline:true, width:"750px", height:"400px"});
+		$(".inline").colorbox({inline:true, width:"700px", height:"370px"});
 	}
 	else{
         $(".inline").colorbox({inline:true, width:"100%", height:"auto"});

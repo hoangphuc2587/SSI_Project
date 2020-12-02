@@ -53,17 +53,17 @@
         <section class="process">
             <div class="container kurashi-content">
                 <div id="viewport">                    
-                    <div style="background:url(images/kurashi/map_img.png) no-repeat; width:1168px; height:910px;background-size: 1168px 910px;margin: 150px;">
-                        <div class="mark01 red"><p class="tooltip"><a href="#inline_content01" class="inline"><img src="images/kurashi/building.png" width="60" height="73" alt="" /></a></p></div>
-                        <div class="mark02 blue"><p class="tooltip"><a href="#inline_content02" class="inline"><img src="images/kurashi/education001.png" width="60" height="74" alt="" /></a></p></div>
-                        <div class="mark03 blue"><p class="tooltip"><a href="#inline_content03" class="inline"><img src="images/kurashi/education002.png" width="60" height="74" alt="" /></a></p></div>
-                        <div class="mark04 blue"><p class="tooltip"><a href="#inline_content04" class="inline"><img src="images/kurashi/education003.png" width="60" height="73" alt="" /></a></p></div>
-                        <div class="mark05 yellow"><p class="tooltip"><a href="#inline_content05" class="inline"><img src="images/kurashi/financial.png" width="60" height="73" alt="" /></a></p></div>
-                        <div class="mark06 red"><p class="tooltip"><a href="#inline_content06" class="inline"><img src="images/kurashi/medical.png" width="60" height="74" alt="" /></a></p></div>
-                        <div class="mark07 yellow"><p class="tooltip"><a href="#inline_content07" class="inline"><img src="images/kurashi/merchandise001.png" width="60" height="73" alt="" /></a></p></div>
-                        <div class="mark08 yellow"><p class="tooltip"><a href="#inline_content08" class="inline"><img src="images/kurashi/merchandise002.png" width="60" height="74" alt="" /></a></p></div>
-                        <div class="mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" width="60" height="74" alt="" /></a></p></div>
-                        <div class="mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" width="60" height="74" alt="" /></a></p></div>
+                    <div style="background:url(images/kurashi/map_img.png) no-repeat; width:1263px; height:984px;background-size: 1263px 984px;">
+                        <div class="mark-kurashi mark01 red"><p class="tooltip"><a href="#inline_content01" class="inline"><img src="images/kurashi/building.png" width="55px" height="66px" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark02 blue"><p class="tooltip"><a href="#inline_content02" class="inline"><img src="images/kurashi/education001.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark03 blue"><p class="tooltip"><a href="#inline_content03" class="inline"><img src="images/kurashi/education002.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark04 blue"><p class="tooltip"><a href="#inline_content04" class="inline"><img src="images/kurashi/education003.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark05 yellow"><p class="tooltip"><a href="#inline_content05" class="inline"><img src="images/kurashi/financial.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark06 red"><p class="tooltip"><a href="#inline_content06" class="inline"><img src="images/kurashi/medical.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark07 yellow"><p class="tooltip"><a href="#inline_content07" class="inline"><img src="images/kurashi/merchandise001.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark08 yellow"><p class="tooltip"><a href="#inline_content08" class="inline"><img src="images/kurashi/merchandise002.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark09 red"><p class="tooltip"><a href="#inline_content09" class="inline"><img src="images/kurashi/move.png" alt="" /></a></p></div>
+                        <div class="mark-kurashi mark10 red"><p class="tooltip"><a href="#inline_content10" class="inline"><img src="images/kurashi/train.png" alt="" /></a></p></div>
 
                         <div class="info01 yellow info"><a href="#inline_content05" class="inline"><img src="images/kurashi/003.png" alt="" /></a></div>
                         <div class="info02 red info"><a href="#inline_content01" class="inline"><img src="images/kurashi/009.png" alt="" /></a></div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="width:1168px; height:910px;"><img src="images/kurashi/map_img.png" alt="" /></div> 
+                    <div style="width:1263px; height:984px;"><img src="images/kurashi/map_img.png" alt="" /></div> 
                 </div>
             </div>
         
@@ -132,7 +132,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/009.png" width="334px" height="100px" alt="" />  
+                                <img src="images/kurashi/009.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -206,7 +206,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/004.png" width="334px" height="95px" alt="" />  
+                                <img src="images/kurashi/004.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -230,7 +230,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/003.png" width="354px" height="96px" alt="" />  
+                                <img src="images/kurashi/003.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -253,7 +253,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/007.png" width="333x" height="99px" alt="" />  
+                                <img src="images/kurashi/007.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -279,7 +279,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/001.png" width="341px" height="99px" alt="" />  
+                                <img src="images/kurashi/001.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -302,7 +302,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/002.png" width="314px" height="100px" alt="" />  
+                                <img src="images/kurashi/002.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -326,7 +326,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/008.png" width="342px" height="97px" alt="" />  
+                                <img src="images/kurashi/008.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -349,7 +349,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-12">
-                                <img src="images/kurashi/010.png" width="314px" height="99px" alt="" />  
+                                <img src="images/kurashi/010.png" alt="" />  
                             </div>
                         </div>
                         <div class="row">
@@ -368,7 +368,8 @@
                     </div>
                 </div>
             </div>
-            <input type="hidden" name="hd_first" id="hd_first" value="0">           
+            <input type="hidden" name="hd_first" id="hd_first" value="0">
+            <input type="hidden" name="hd_active" id="hd_active" value="">
         </div>
        
         <!-- common contact -->
