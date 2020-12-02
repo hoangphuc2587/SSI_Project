@@ -12,6 +12,19 @@ jQuery(document).ready(function() {
 		return false;
 	});
 
+	jQuery("#viewport-sp").mapbox();
+    jQuery(".map-control a").click(function() {
+		var viewport = $("#viewport-sp");
+		if(this.className == "back") {
+			viewport.mapbox(this.className, 2);
+		}
+		else {
+			viewport.mapbox(this.className);
+		}
+		return false;
+	});
+	jQuery(".kurashi .process").scrollLeft(300);
+
 	jQuery(".fields_inner .category").click(function() {
 		var first = jQuery("#hd_first").val();
 		var id = jQuery(this).attr("data-id");
@@ -88,9 +101,8 @@ $(document).ready(function(){
 		$(".inline").colorbox({inline:true, width:"700px", height:"370px"});
 	}
 	else{
-        $(".inline").colorbox({inline:true, width:"100%", height:"auto"});
+        $(".inline").colorbox({inline:true, width:"100%", height:"460px"});
 	}
-    
 });
 
 // $(function(){

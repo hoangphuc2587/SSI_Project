@@ -7,6 +7,15 @@
     overflow: initial !important;
 }
 
+#viewport-sp {
+    width: 784px;
+    height: 914px;
+    cursor:move;    
+    position:relative;
+    float:left;  
+    overflow: initial !important;
+}
+
 .kurashi-content{
   position: relative;
   /*overflow: initial;*/
@@ -473,6 +482,10 @@
     margin: unset;
 }
 
+.title-sp{
+   display: none !important; 
+}
+
 @media screen and (min-width: 992px){
   .col-lg-6 {
     -ms-flex: 0 0 50%;
@@ -506,6 +519,14 @@
     .kurashi-content{
         max-width: 1280px;
     }
+
+    .kurashi-sp{
+       display: none !important;
+    }
+
+
+
+
     #viewport {
         width: 1263px;
         height: 1040px;
@@ -521,34 +542,615 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1279px) {
+    .kurashi-pc{
+       display: none !important;
+    }
+
     .kurashi .process{
         overflow: auto;
-         padding-top: 145px;
+        padding-top: 220px;
     }
+
+    .title-sp{
+        text-align: center;
+        padding-top: 20px;
+    }
+
 
     .kurashi-content{
       position: relative;
       overflow: initial;
     }
 
-    #viewport {
+    #viewport-sp {
         width: 784px;
-        height: 914px;
+        height: 503px;
         cursor:move;
         overflow:initial;
         position:relative;
-        float:left;
-        padding: 150px 0px 100px;
+        float:left;        
     }
 
-    #colorbox{margin-left:-195px !important;}
+    .wrap_fields {       
+        top: 20px;
+        right: 45px;
+        width: 320px;
+        height: 210px;       
+    }
+
+    .field_title a {
+        padding: 6px 8px 5px 11px;
+        color: #ffffff;
+        font-size: 8px;
+        position: relative;
+    }
+
+    .field_content {  
+        font-size: 8px;
+        padding: 3px 0px 3px 0px;
+    }
+
+    .field_title_1 a:before {
+       border-bottom: 22px solid #e96188;
+    }
+
+    .field_title_2 a:before {
+       border-bottom: 22px solid #f7b10a;
+    }
+
+    .field_title_3 a:before {
+       border-bottom: 22px solid #4e9bd5;
+    } 
+
+    .mark01{
+        position:absolute;
+        left: 381px;
+        top: -32px;
+        z-index: 999;
+    }
+    .mark02{
+        position:absolute;
+        left: 340px;
+        top: 290px;
+        z-index: 999;
+    }
+    .mark03{
+        position:absolute;
+        left: 126px;
+        top: 326px;
+        z-index: 999;    
+    }
+    .mark04{
+        position:absolute;
+        left: 280px;
+        top: 440px;
+        z-index: 999;    
+    }
+    .mark05{
+        position:absolute;
+        left: 417px;
+        top: 340px;
+        z-index: 999;    
+    }
+    .mark06{
+        position:absolute;
+        left: 525px;
+        top: 387px;
+        z-index: 999;    
+    }
+    .mark07{
+        position:absolute;
+        left: 435px;
+        top: 259px;
+        z-index: 999;    
+    }
+    .mark08{
+        position:absolute;
+        left: 508px;
+        top: 300px;
+        z-index: 999;    
+    }
+    .mark09{
+        position:absolute;
+        left: 400px;
+        top: 495px;
+        z-index: 999;    
+    }
+    .mark10{
+        position:absolute;
+        left: 250px;
+        top: 360px;
+        z-index: 999;    
+    }
+
+    .line01{
+        position: absolute;
+        right: 135px;
+        top: 356px;
+        display: none;     
+    }
+
+    .line02{
+        position: absolute;
+        left: 341px;
+        top: -27px;
+        display: none;
+    }
+
+    .line03{
+        position: absolute;
+        left: 452px;
+        top: 77px;
+        display: none;    
+    }
+
+    .line04{
+        position: absolute;
+        right: 168px;
+        top: 4px;
+        display: none;    
+    }
+
+    .line05{
+        position: absolute;
+        left: -7px;
+        top: 229px;
+        display: none;    
+    }
+
+
+    .line06{
+        position: absolute;
+        left: 51px;
+        top: 342px;
+        display: none;    
+    }
+
+    .line07{
+        position: absolute;
+        left: 156px;
+        top: 378px;
+        display: none;    
+    }
+
+    .line08{
+        position: absolute;
+        left: 296px;
+        top: 486px;
+        display: none;    
+    }
+
+    .line09{
+        position: absolute;
+        left: 415px;
+        top: 544px;
+        display: none;    
+    }
+
+    .line10{
+        position: absolute;
+        right: 66px;
+        top: 402px;
+        display: none;    
+    }    
+
+    .info01{
+        position: absolute;
+        right: 50px;
+        top: 454px;
+        z-index: 9999;
+        display: none;
+    }
+
+    .info02{
+       position: absolute;
+       left: 155px;
+       top: -36px;
+       display: none; 
+    }
+
+    .info03{
+        position: absolute;
+        left: 292px;
+        top: 29px;
+        display: none;
+    }
+
+    .info04{
+        position: absolute;
+        right: 132px;
+        top: -52px;
+        display: none;
+    }
+
+    .info05{
+        position: absolute;
+        left: -18px;
+        top: 202px;
+        display: none;
+        z-index: 9999;
+
+    }
+
+    .info06{
+        position: absolute;
+        left: -9px;
+        top: 422px;
+        display: none;    
+    }
+
+    .info07{
+        position: absolute;
+        left: -26px;
+        top: 536px;
+        display: none;    
+    }
+
+    .info08{
+        position: absolute;
+        left: 142px;
+        top: 566px;
+        z-index: 9999;
+        display: none;    
+    }
+
+    .info09{
+        position: absolute;
+        left: 327px;
+        top: 624px;
+        display: none;    
+    }
+
+    .info10{
+        position: absolute;
+        right: 6px;
+        top: 566px;
+        display: none;    
+    }
+
+    #colorbox{
+        margin-left: 0px !important;
+        left: 0 !important;
+    }
 
     #cboxContent p{
         min-height: unset;
     }
 
     #cboxContent .image-item{
-        padding-top: 50px;
+        padding-top: 10px;
+    }
+
+    #cboxContent p{
+       padding-left: 10px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       font-size: 14px;
+    }
+
+    #cboxContent .logo {
+        margin-left: 10px;
+    }
+
+    #cboxClose {
+        cursor: pointer;
+        display: block !important; 
+        position: absolute;
+        z-index: 9999;
+        top: 10px;
+        right: 10px;
+        background: url(../images/kurashi/sp/close.png) no-repeat;
+        height: 15px;
+        width: 15px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .title-sp{
+       display: block !important; 
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .kurashi .process{
+        overflow: auto;
+        padding-top: 220px;
+    }
+
+    .title-sp{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+    .kurashi-content{
+      position: relative;
+      overflow: initial;
+    }
+
+    #viewport-sp {
+        width: 784px;
+        height: 503px;
+        cursor:move;
+        overflow:initial;
+        position:relative;
+        float:left;        
+    }
+
+    .wrap_fields {       
+        top: 20px;
+        right: 45px;
+        width: 320px;
+        height: 210px;       
+    }
+
+    .field_title a {
+        padding: 6px 8px 5px 11px;
+        color: #ffffff;
+        font-size: 8px;
+        position: relative;
+    }
+
+    .field_content {  
+        font-size: 8px;
+        padding: 3px 0px 3px 0px;
+    }
+
+    .field_title_1 a:before {
+       border-bottom: 22px solid #e96188;
+    }
+
+    .field_title_2 a:before {
+       border-bottom: 22px solid #f7b10a;
+    }
+
+    .field_title_3 a:before {
+       border-bottom: 22px solid #4e9bd5;
+    } 
+
+    .mark01{
+        position:absolute;
+        left: 381px;
+        top: -32px;
+        z-index: 999;
+    }
+    .mark02{
+        position:absolute;
+        left: 340px;
+        top: 290px;
+        z-index: 999;
+    }
+    .mark03{
+        position:absolute;
+        left: 126px;
+        top: 326px;
+        z-index: 999;    
+    }
+    .mark04{
+        position:absolute;
+        left: 280px;
+        top: 440px;
+        z-index: 999;    
+    }
+    .mark05{
+        position:absolute;
+        left: 417px;
+        top: 340px;
+        z-index: 999;    
+    }
+    .mark06{
+        position:absolute;
+        left: 525px;
+        top: 387px;
+        z-index: 999;    
+    }
+    .mark07{
+        position:absolute;
+        left: 435px;
+        top: 259px;
+        z-index: 999;    
+    }
+    .mark08{
+        position:absolute;
+        left: 508px;
+        top: 300px;
+        z-index: 999;    
+    }
+    .mark09{
+        position:absolute;
+        left: 400px;
+        top: 495px;
+        z-index: 999;    
+    }
+    .mark10{
+        position:absolute;
+        left: 250px;
+        top: 360px;
+        z-index: 999;    
+    }
+
+    .line01{
+        position: absolute;
+        right: 135px;
+        top: 356px;
+        display: none;     
+    }
+
+    .line02{
+        position: absolute;
+        left: 341px;
+        top: -27px;
+        display: none;
+    }
+
+    .line03{
+        position: absolute;
+        left: 452px;
+        top: 77px;
+        display: none;    
+    }
+
+    .line04{
+        position: absolute;
+        right: 168px;
+        top: 4px;
+        display: none;    
+    }
+
+    .line05{
+        position: absolute;
+        left: -7px;
+        top: 229px;
+        display: none;    
+    }
+
+
+    .line06{
+        position: absolute;
+        left: 51px;
+        top: 342px;
+        display: none;    
+    }
+
+    .line07{
+        position: absolute;
+        left: 156px;
+        top: 378px;
+        display: none;    
+    }
+
+    .line08{
+        position: absolute;
+        left: 296px;
+        top: 486px;
+        display: none;    
+    }
+
+    .line09{
+        position: absolute;
+        left: 415px;
+        top: 544px;
+        display: none;    
+    }
+
+    .line10{
+        position: absolute;
+        right: 66px;
+        top: 402px;
+        display: none;    
+    }    
+
+    .info01{
+        position: absolute;
+        right: 50px;
+        top: 454px;
+        z-index: 9999;
+        display: none;
+    }
+
+    .info02{
+       position: absolute;
+       left: 155px;
+       top: -36px;
+       display: none; 
+    }
+
+    .info03{
+        position: absolute;
+        left: 292px;
+        top: 29px;
+        display: none;
+    }
+
+    .info04{
+        position: absolute;
+        right: 132px;
+        top: -52px;
+        display: none;
+    }
+
+    .info05{
+        position: absolute;
+        left: -18px;
+        top: 202px;
+        display: none;
+        z-index: 9999;
+
+    }
+
+    .info06{
+        position: absolute;
+        left: -9px;
+        top: 422px;
+        display: none;    
+    }
+
+    .info07{
+        position: absolute;
+        left: -26px;
+        top: 536px;
+        display: none;    
+    }
+
+    .info08{
+        position: absolute;
+        left: 142px;
+        top: 566px;
+        z-index: 9999;
+        display: none;    
+    }
+
+    .info09{
+        position: absolute;
+        left: 327px;
+        top: 624px;
+        display: none;    
+    }
+
+    .info10{
+        position: absolute;
+        right: 6px;
+        top: 566px;
+        display: none;    
+    }
+
+    #colorbox{
+        margin-left: 0px !important;
+        left: 0 !important;
+    }
+
+    #cboxContent p{
+        min-height: unset;
+    }
+
+    #cboxContent .image-item{
+        padding-top: 10px;
+    }
+
+    #cboxContent p{
+       padding-left: 10px;
+       padding-bottom: 10px;
+       padding-top: 10px;
+       font-size: 14px;
+    }
+
+    #cboxContent .logo {
+        margin-left: 10px;
+    }
+
+    #cboxClose {
+        cursor: pointer;
+        display: block !important; 
+        position: absolute;
+        z-index: 9999;
+        top: 10px;
+        right: 10px;
+        background: url(../images/kurashi/sp/close.png) no-repeat;
+        height: 15px;
+        width: 15px;
+    }
+}
+
+
