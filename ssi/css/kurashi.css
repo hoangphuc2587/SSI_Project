@@ -110,7 +110,7 @@
 }
 .mark07{
     position:absolute;
-    left: 739px;
+    left: 745px;
     top: 381px;
     z-index: 999;    
 }
@@ -241,7 +241,7 @@
 
 .line03{
     position: absolute;
-    left: 767px;
+    left: 770px;
     top: 184px;
     display: none;    
 }
@@ -307,7 +307,19 @@
 #cboxContent{position:relative;}
 #cboxLoadedContent{overflow:auto;}
 #cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
-#cboxClose{cursor:pointer;display: none !important;}
+/*#cboxClose{cursor:pointer;display: none !important;}*/
+#cboxClose {
+        cursor: pointer;
+        display: block !important; 
+        position: absolute;
+        z-index: 9999;
+        top: 10px;
+        right: 10px;
+        background: url(../images/kurashi/sp/close.png) no-repeat;
+        height: 15px;
+        width: 15px;
+    }
+
 .cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
 #colorbox{left:50% !important; margin-left:-395px !important;}
 #cboxContent{
@@ -421,7 +433,7 @@
     background: #e96188;
 }
 .field_title_1 a:before{
-    border-bottom: 28px solid #e96188;
+    border-bottom: 29px solid #e96188;
 }
 
 .field_title_1 span{
@@ -478,7 +490,7 @@
 
 .line{
     height: auto;
-    background: unset;
+    background: transparent !important;
     margin: unset;
 }
 
@@ -574,13 +586,14 @@
 
     .wrap_fields {       
         top: 20px;
-        right: 45px;
+        right: 25px;
         width: 320px;
-        height: 210px;       
+        height: 224px; 
+        padding: 15px 20px;      
     }
 
     .field_title a {
-        padding: 6px 8px 5px 11px;
+        padding: 6px 8px 8px 10px;
         color: #ffffff;
         font-size: 8px;
         position: relative;
@@ -592,16 +605,25 @@
     }
 
     .field_title_1 a:before {
-       border-bottom: 22px solid #e96188;
+       border-bottom: 24px solid #e96188;
     }
 
     .field_title_2 a:before {
-       border-bottom: 22px solid #f7b10a;
+       border-bottom: 24px solid #f7b10a;
     }
 
     .field_title_3 a:before {
-       border-bottom: 22px solid #4e9bd5;
+       border-bottom: 24px solid #4e9bd5;
     } 
+
+    .field_title_2 span{
+      margin-right: 15px;
+    }
+
+    .field_title_3 span{
+      margin-right: 40px;
+    }
+
 
     .mark01{
         position:absolute;
@@ -883,7 +905,8 @@
         top: 20px;
         right: 45px;
         width: 320px;
-        height: 210px;       
+        height: 210px; 
+        padding: 20px 20px;      
     }
 
     .field_title a {
@@ -1152,5 +1175,112 @@
         width: 15px;
     }
 }
+
+/*IE*/
+@media all and (-ms-high-contrast:none) and (min-width: 1280px) {
+
+    #viewport {
+        height: 1140px;
+        margin-top: 50px;
+    }
+
+    .current-map-layer{
+        top: 100px !important;
+    }
+
+    .line01{
+        position: absolute;
+        right: 86px;
+        top: 510px;
+        display: none;     
+    }
+
+    .line02{
+        position: absolute;
+        left: 600px;
+        top: -83px;
+        display: none;
+    }
+
+    .line03{
+        position: absolute;
+        left: 770px;
+        top: 161px;
+        display: none;    
+    }
+
+    .line04{
+        position: absolute;
+        right: 182px;
+        top: 21px;
+        display: none;    
+    }
+
+    .line05{
+        position: absolute;
+        left: 239px;
+        top: 335px;
+        display: none;    
+    }
+
+
+    .line06{
+        position: absolute;
+        left: 90px;
+        top: 485px;
+        display: none;    
+    }
+
+    .line07{
+        position: absolute;
+        left: 290px;
+        top: 539px;
+        display: none;    
+    }
+
+    .line08{
+        position: absolute;
+        left: 481px;
+        top: 713px;
+        display: none;    
+    }
+
+    .line09{
+        position: absolute;
+        left: 697px;
+        top: 746px;
+        display: none;    
+    }
+
+    .line10{
+        position: absolute;
+        right: 47px;
+        top: 584px;
+        display: none;    
+    }
+
+    .field_title a{
+        padding: 6px 8px 4px 11px;
+    }
+
+    .field_title_1 a:before{
+        border-bottom: 29px solid #e96188;
+    }
+
+    .field_title_2 a:before{
+        border-bottom: 30px solid #f7b10a;
+    }
+
+    .field_title_3 a:before{
+        border-bottom: 30px solid #4e9bd5;
+    }
+
+    #cboxContent .image-item{
+        margin-top: 80px;
+    }
+
+}
+
+
 
 

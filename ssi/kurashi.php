@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/kurashi.css?v=2.1" />
+    <link rel="stylesheet" href="css/kurashi.css?v=2.4" />
 	<?php include 'partials/analytics.php'; ?>
 </head>
 
@@ -50,7 +50,7 @@
 
     <div class="kurashi">
        <!-- Process -->
-        <h3 class="title-sp">スライドして街全体が見れます。</h3>
+        <h3 class="title-sp">スワイプして街全体が見れます。</h3>
         <section class="process">
             <div class="container kurashi-content">
 
@@ -245,7 +245,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
+                                
                             </div>
                         </div>    
                     </div>
@@ -297,7 +297,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
+                                
                             </div>
                         </div>    
                     </div>
