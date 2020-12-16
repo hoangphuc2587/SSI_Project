@@ -1,18 +1,16 @@
 #viewport {
     width: 784px;
     height: 914px;
-    cursor:move;    
     position:relative;
-    float:left;  
+    float:left;
     overflow: initial !important;
 }
 
 #viewport-sp {
     width: 784px;
     height: 914px;
-    cursor:move;    
     position:relative;
-    float:left;  
+    float:left;
     overflow: initial !important;
 }
 
@@ -542,7 +540,6 @@
     #viewport {
         width: 1263px;
         height: 1040px;
-        cursor:move;    
         position:relative;
         float:left;       
         overflow: initial !important;
@@ -577,8 +574,7 @@
 
     #viewport-sp {
         width: 784px;
-        height: 503px;
-        cursor:move;
+        height: 503px;        
         overflow:initial;
         position:relative;
         float:left;        
@@ -894,8 +890,7 @@
 
     #viewport-sp {
         width: 784px;
-        height: 503px;
-        cursor:move;
+        height: 503px;        
         overflow:initial;
         position:relative;
         float:left;        

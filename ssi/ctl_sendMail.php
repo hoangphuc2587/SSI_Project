@@ -62,7 +62,7 @@
 
                 // Build POST request:
                 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-                $recaptcha_secret = '6LfG38wZAAAAACjnTlZLBzhHqX-cT17fN0pkXZ0E';
+                $recaptcha_secret = '6Lfu-MsZAAAAALVXV4u8aTtAAE8mjrOeRkBg7Aw_';
                 $recaptcha_response = $_POST['recaptcha_response'];
               //  var_dump($recaptcha_response);die;
 

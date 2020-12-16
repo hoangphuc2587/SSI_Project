@@ -5370,13 +5370,13 @@ footer .footer-txt a:hover , footer .policy_link a:hover {
     margin-top: 20px;
   }
   .mainvisual .slick-next {
-    left: 35px;
+    right: -55px;
     height: 47px;
     width: 43px;
     background-size: contain;
   }
   .mainvisual .slick-prev {
-    right: -25px;
+    left: 0px;
     height: 47px;
     width: 43px;
     background-size: contain;

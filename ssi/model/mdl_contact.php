@@ -10,9 +10,27 @@ Class ContactModel Extends baseModel{
 
     	$mailHandler = new MailHandler();
         $contactInfo=array();
-        $contactInfo = $this->getListContact();
+        //$contactInfo = $this->getListContact();
         
         $params = array('1'=>$name, '2'=>$company_name, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number,'11'=>$inquiry, '12'=>$content);
+
+        if ($inquiry == 'IT制作やプロジェクトに関するご相談'){
+            array_push($contactInfo, 'ssi_it_solution@ssi.co.jp', 'contact_from_web+solution@ssi.co.jp');
+        }elseif ($inquiry == '業務効率化に関するご相談'){
+            array_push($contactInfo, 'ssi_business_consulting@ssi.co.jp', 'contact_from_web+consulting@ssi.co.jp');
+        }elseif ($inquiry == 'その他のご相談'){
+            array_push($contactInfo, 'keikan@ssi.co.jp', 'contact_from_web+inquiry@ssi.co.jp');
+        }elseif ($inquiry == '資料請求（PmSQETs）'){
+            array_push($contactInfo, 'sqet@ssi.co.jp', 'contact_from_web+sqet@ssi.co.jp');
+        }elseif ($inquiry == '資料請求（SGS）'){
+            array_push($contactInfo, 'education@ssi.co.jp', 'contact_from_web+edu@ssi.co.jp');
+        }elseif ($inquiry == 'パートナーについて'){
+            array_push($contactInfo, 'ssi_procurement@ssi.co.jp', 'contact_from_web+partner@ssi.co.jp');
+        }elseif ($inquiry == '採用について'){
+            array_push($contactInfo, 'ssi_recruit@ssi.co.jp', 'contact_from_web+recruit@ssi.co.jp');
+        }elseif ($inquiry == 'その他'){
+            array_push($contactInfo, 'keikan@ssi.co.jp', 'contact_from_web+other@ssi.co.jp');
+        }
 
     	return $mailHandler->sendMailToAdmin($params, $contactInfo);
     }
