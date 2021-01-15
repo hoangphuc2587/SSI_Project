@@ -68,7 +68,7 @@
                 <div class="video">
                     <p class="txt-top">文系や理系などの出身学部は関係なく、「ITの世界で挑戦したい人」をお待ちしています。</p>
                     <div class="video-wrapper">
-                        <iframe src="http://www.youtube.com/embed/YDF5_CSZUE0" height="315" width="560"
+                        <iframe src="https://www.youtube.com/embed/YDF5_CSZUE0" height="315" width="560"
                             allowfullscreen="" frameborder="0">
                         </iframe>
                     </div>

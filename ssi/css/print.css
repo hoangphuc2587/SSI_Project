@@ -1,0 +1,87 @@
+
+@page { margin: 0.7cm 0; }
+
+body { margin: 0.6cm; }
+
+.navbar{
+    position: relative !important;
+    width: 100%;
+}
+
+body{
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+}
+
+.pc, .navi-pc {
+    display: block !important; 
+}
+
+.navi-sp, .sp, .polygon01, .polygon02 , .polygon03 , .polygon04 , .polygon05 , .polygon06, .nav-toggle {
+    display: none !important; 
+    visibility: hidden !important;
+}
+
+.break-print , .company-table, .company .map, .company .tab{
+    page-break-after: always;
+}
+
+.nav {
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -ms-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    transition: top 0.5s ease;
+     background: transparent; 
+    cursor: pointer;
+    font-size: 18px;
+     width: 100%; 
+    top: 5px;
+    padding: 0; 
+    position: absolute;
+    height: auto;
+    z-index: 9999;
+    left: 200px;
+}
+
+.nav ul{
+    flex-direction: row !important;
+}
+
+.nav ul li:before{
+    border-bottom: 0px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+/* company */
+
+.gg-map iframe{
+    height: 700px;
+}
+
+.company .tab .ttl-underline{   
+    padding-top: 30px !important;
+}
+
+.company .tab-access .tab-wrapper{
+    max-width: 1170px !important;   
+    top: 20px !important;
+}
+
+.company .map .ttl{
+    margin-left: 20px !important;
+    margin-top: -80px !important;
+}
+
+.pmsquet_pc .sgs_wp{
+     padding-bottom: 5px !important;
+}
+
+.company-table .company-inner {
+    padding: 0 0px;
+}
+
+

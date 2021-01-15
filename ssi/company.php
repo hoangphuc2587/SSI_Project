@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/company.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
 	<?php include 'partials/analytics.php'; ?>
 </head>
 
@@ -119,7 +120,7 @@
                                 </p>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="break-print">
                             <td>所在地</td>
                             <td>
                                 <p>本社</p>
