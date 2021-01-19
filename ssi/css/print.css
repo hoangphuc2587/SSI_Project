@@ -34,7 +34,7 @@ body{
     transition: top 0.5s ease;
      background: transparent; 
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
      width: 100%; 
     top: 5px;
     padding: 0; 
@@ -55,6 +55,7 @@ body{
 .navbar ul li {
     margin: 0 15px;
 }
+
 
 /* company */
 
@@ -83,5 +84,94 @@ body{
 .company-table .company-inner {
     padding: 0 0px;
 }
+
+.pmsquet_pc .btn-border-psg, .sgs_pc .btn-border-psg{
+    bottom: -1px !important;
+}
+
+/* news */
+
+.news-list-wrapper{
+    margin-top: -80px;
+}
+
+
+.IE9 .nav {
+    top: 30px !important;
+    left: 280px !important;
+}
+
+.IE9 .navbar ul li {
+    margin: 0 10px !important;
+}
+
+.IE9 .company .map .ttl{
+    margin-left: 0px !important;
+    margin-top: -60px !important;
+}
+
+.Safari .nav ul li a{
+   font-size: 14px !important;
+}
+
+.Safari .nav {
+    top: 30px !important;
+    left: 265px !important;
+}
+
+.Safari .navbar ul li {
+    margin: 0 10px !important;
+}
+
+.Safari .company .map .ttl{
+    margin-left: 0px !important;
+    margin-top:  40px !important;
+}
+
+.Safari .company .time-line .entries .entry .title{
+    font-size: 14px !important;
+}
+
+.Safari .company .time-line .entries .entry .body p{
+   font-size: 14px !important;
+}
+
+
+.IE9 .table-responsive > tbody > tr td:first-child {
+    background-color: #efefef;
+    border: 1px solid #dedede;
+}
+
+.IE9 .table-responsive > tbody > tr td {
+    border: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 3px 3px 3px 5px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.Safari .table-responsive > tbody > tr td:first-child {
+    background-color: #efefef;
+    border: 1px solid #dedede;
+}
+
+.Safari .table-responsive > tbody > tr td {
+    border: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2px 3px 2px 15px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.Safari .pmsquet_pc .btn-border-psg, .Safari .sgs_pc .btn-border-psg{
+    bottom: 4px !important;
+}
+
+
+
 
 

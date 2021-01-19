@@ -38,10 +38,10 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/company.css" />
     <link rel="stylesheet" media="print" href="css/print.css" />
-	<?php include 'partials/analytics.php'; ?>
+	<?php include 'partials/analytics.php'; ?>  
 </head>
 
-<body>
+<body<?php echo $cssIE;?>>
     <!-- Header -->
     <?php include 'partials/header.php'; ?>
     <!-- sub visual -->

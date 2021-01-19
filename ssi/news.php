@@ -54,10 +54,11 @@ if ($total_records > 0) {
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/news.css" />
-	<?php include 'partials/analytics.php'; ?>
+    <link rel="stylesheet" media="print" href="css/print.css" />
+    <?php include 'partials/analytics.php'; ?>
 </head>
 
-<body>
+<body<?php echo $cssIE;?>>
     <?php include 'partials/header.php'; ?>
 
     <div class="news bg-green03" <?php if ($total_records==0){ echo 'style="background-color: transparent"';} ?>>
@@ -77,7 +78,7 @@ if ($total_records > 0) {
                     <?php
                     if ($total_records) {
                         foreach ($listNews as &$news) { ?>
-                            <li class="news-list-item one-img">
+                            <li class="news-list-item one-img break-print">
                             <span class="anchor" id=<?= $news->getId(); ?>></span>
                                     <div class="news-list-head">
                                         <p class="btn-wrapper">
