@@ -135,18 +135,31 @@ body{
 
 
 .IE9 .table-responsive > tbody > tr td:first-child {
-    background-color: #efefef;
-    border: 1px solid #dedede;
+   width: 30%;
+   padding: 15px 0px 15px 40px !important;
+}
+
+.IE9 .table-responsive > tbody > tr td:first-child + td {
+
+   width: 69%;
+   border-left: 1px solid #dedede;
+   padding: 10px 0px 15px 20px !important;
+}
+
+.IE9 .table-responsive > tbody > tr {
+   border: 1px solid #dedede;
 }
 
 .IE9 .table-responsive > tbody > tr td {
     border: none;
     position: relative;
-    width: 100%;
     overflow: hidden;
-    padding: 3px 3px 3px 5px;
     font-size: 15px;
     display: inline-block;
+}
+
+.IE9 .nav ul li a {
+    font-size: 14px !important;
 }
 
 .IE9 .pmsquet_pc .btn-border-psg, .IE9 .sgs_pc .btn-border-psg{
@@ -187,8 +200,26 @@ body{
     }
 }
 
-
-
+@media (min-width: 500px) and (max-width: 650px) {
+  .table-responsive,
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: revert !important;
+  }
+  .table-responsive > tbody > tr td:first-child {
+    background-color: white !important;
+    width: 20% !important;
+  }
+  .table-responsive > tbody > tr td {
+    border: 0.5px solid #dedede !important;
+  }
+  .nav ul li a {
+    font-size: 9.5px !important;
+  }
+}
 
 
 
