@@ -1,7 +1,4 @@
 
-@page { margin: 0.7cm 0; }
-
-body { margin: 0.6cm; }
 
 .navbar{
     position: relative !important;
@@ -35,7 +32,7 @@ body{
      background: transparent; 
     cursor: pointer;
     font-size: 16px;
-     width: 100%; 
+    width: 100%; 
     top: 5px;
     padding: 0; 
     position: absolute;
@@ -60,7 +57,7 @@ body{
 /* company */
 
 .gg-map iframe{
-    height: 700px;
+    height: 700px !important;
 }
 
 .company .tab .ttl-underline{   
@@ -152,6 +149,10 @@ body{
     display: inline-block;
 }
 
+.IE9 .pmsquet_pc .btn-border-psg, .IE9 .sgs_pc .btn-border-psg{
+    bottom: 5px !important;
+}
+
 .Safari .table-responsive > tbody > tr td:first-child {
     background-color: #efefef;
     border: 1px solid #dedede;
@@ -170,6 +171,22 @@ body{
 .Safari .pmsquet_pc .btn-border-psg, .Safari .sgs_pc .btn-border-psg{
     bottom: 4px !important;
 }
+
+
+
+
+@media (orientation:landscape) and (min-width:600px) {
+
+    h1.logo img {
+        height: 60px;
+    }
+    
+    /* company */
+    .gg-map iframe{
+        height: 500px !important;
+    }
+}
+
 
 
 
