@@ -129,7 +129,7 @@
                                 <p class="pd-left pc">TEL 03-5952-1311（代表）　FAX 03-5952-1866</p>
                                 <p class="pd-left sp">TEL <a href="tel:0359521311">03-5952-1311</a>（代表）　<br/>FAX 03-5952-1866</p>
 
-                                <p>関西営業所</p>
+                                <p>関西事業所</p>
                                 <p class="pd-left">〒532-0003</p>
                                 <p class="pd-left">大阪府大阪市淀川区宮原4-4-63　新大阪千代田ビル別館 8F</p>
                                 <p class="pd-left pc">TEL 06-6396-1228（代表）　FAX 06-6396-2736</p>

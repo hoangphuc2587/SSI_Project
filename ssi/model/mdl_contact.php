@@ -6,13 +6,13 @@ include 'classes/MContact.php';
 Class ContactModel Extends baseModel{
 	
     /*アドミンにメール送信*/
-    public function sendContactMailToAdmin($company_name, $name,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content) {
+    public function sendContactMailToAdmin($company_name, $name, $company_url,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content) {
 
     	$mailHandler = new MailHandler();
         $contactInfo=array();
         //$contactInfo = $this->getListContact();
         
-        $params = array('1'=>$name, '2'=>$company_name, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number,'11'=>$inquiry, '12'=>$content);
+        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number,'11'=>$inquiry, '12'=>$content);
 
         if ($inquiry == 'IT制作やプロジェクトに関するご相談'){
             array_push($contactInfo, 'ssi_it_solution@ssi.co.jp', 'contact_from_web+solution@ssi.co.jp');
@@ -36,11 +36,11 @@ Class ContactModel Extends baseModel{
     }
 
     /*ユーザーにメール送信*/
-    public function sendContactMailToUser($company_name, $name,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content) {
+    public function sendContactMailToUser($company_name, $name, $company_url, $postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content) {
         $mailHandler = new MailHandler();
 
         $contactInfo = $this->getContactInfo();
-        $params = array('1'=>$name, '2'=>$company_name, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number, '11'=>$inquiry, '12'=>$content);
+        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number, '11'=>$inquiry, '12'=>$content);
 
         return $mailHandler->sendMailToUser($name, $email, $params, $contactInfo->getAutoMailContent());
 

@@ -16,7 +16,7 @@
 <!--                ソフトウエア高速開発の時代に業務フロー中心設計技法による設計自動生成、トレーサビリティ環境構築を行う高速設計・開発ソリューション-->
 <!--              </p>-->
 <!--              <p class="btn-wrapper absolute">-->
-<!--                <a href="/product_pms.php" class="btn"><span>PmSQETsとは？</span></a>-->
+<!--                <a href="/pmsqets.php" class="btn"><span>PmSQETsとは？</span></a>-->
 <!--                <span class="btn-border"></span>-->
 <!--              </p>-->
 <!--            </div>-->
@@ -37,7 +37,7 @@
 <!--                <img src="/images/index/sgs.png" alt="sgs">-->
 <!--              </div>-->
 <!--              <p class="btn-wrapper absolute">-->
-<!--                <a href="/product_sgs.php" class="btn"><span>SGSとは？</span></a>-->
+<!--                <a href="/sgs.php" class="btn"><span>SGSとは？</span></a>-->
 <!--                <span class="btn-border"></span>-->
 <!--              </p>-->
 <!--            </div>-->
@@ -56,7 +56,7 @@
                         ソフトウエア高速開発の時代に業務フロー中心設計技法による設計自動生成、トレーサビリティ環境構築を行う高速設計・開発ソリューション
                         <div class="psg_btn">
                             <div class="border_wp">
-                                <a href="/product_pms.php" class="btn_sgpm">PmSQETsとは？<span class="btn_cl"></span> </a>
+                                <a href="/pmsqets.php" class="btn_sgpm">PmSQETsとは？<span class="btn_cl"></span> </a>
                                 <span class="btn-border-psg"></span>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                         SGS はデジタル採点システムです。採点業務の効率化により、働き⽅改⾰に寄与できます。
                         <div class="psg_btn">
                             <div class="border_wp">
-                                <a href="/product_sgs.php" class="btn_sgpm">SGSとは？<span class="btn_cl"></span></a>
+                                <a href="/sgs.php" class="btn_sgpm">SGSとは？<span class="btn_cl"></span></a>
                                 <span class="btn-border-psg"></span>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="pro1_wp_btn">
                     <div class="pro1_btn">
-                        <a href="/product_pms.php"><span>PmSQETsとは？</span></a>
+                        <a href="/pmsqets.php"><span>PmSQETsとは？</span></a>
                         <div class="pro1_br"></div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
 <!--              SGS はデジタル採点システムです。採点業務の効率化により、働き⽅改⾰に寄与できます。-->
 <!--              </p>-->
 <!--              <p class="btn-wrapper absolute">-->
-<!--                <a href="/product_sgs.php" class="btn"><span>SGSとは？</span></a>-->
+<!--                <a href="/sgs.php" class="btn"><span>SGSとは？</span></a>-->
 <!--                <span class="btn-border"></span>-->
 <!--              </p>-->
 <!--            </div>-->
@@ -137,7 +137,7 @@
             </div>
             <div class="pro2_wp_btn">
                 <div class="pro2_btn">
-                    <a href="/product_sgs.php"><span>SGSとは？</span></a>
+                    <a href="/sgs.php"><span>SGSとは？</span></a>
                     <div class="pro2_br"></div>
                 </div>
             </div>

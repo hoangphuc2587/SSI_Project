@@ -1,13 +1,13 @@
 <?php
     include 'model/mdl_contact.php';
     include 'model/mdl_contactHistory.php';
-
     $contactModel = new ContactModel();
     $contactHistoryModel = new ContactHistoryModel();
     if (isset($_POST['submit']))
     {
         $name=htmlspecialchars($_POST['name'], ENT_QUOTES);
         $company_name=htmlspecialchars($_POST['company-name'], ENT_QUOTES);
+        $company_url=htmlspecialchars($_POST['company-url'], ENT_QUOTES);
         $code = $_POST['code'];
         $code02 = $_POST['code02'];
         $prefectures = htmlspecialchars($_POST['state'], ENT_QUOTES);
@@ -62,7 +62,7 @@
 
                 // Build POST request:
                 $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-                $recaptcha_secret = '6Lfu-MsZAAAAALVXV4u8aTtAAE8mjrOeRkBg7Aw_';
+                $recaptcha_secret = '6LfG38wZAAAAACjnTlZLBzhHqX-cT17fN0pkXZ0E';
                 $recaptcha_response = $_POST['recaptcha_response'];
               //  var_dump($recaptcha_response);die;
 
@@ -79,11 +79,11 @@
                    // $contactHistoryModel->addNewContactHistory($company_name, $name,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content);
 
                     // send mail
-                    $sendMail = $contactModel->sendContactMailToAdmin($company_name, $name,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content);
-                    $sendMail2 = $contactModel->sendContactMailToUser($company_name, $name,$postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content);
+                    $sendMail = $contactModel->sendContactMailToAdmin($company_name, $name, $company_url, $postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content);
+                    $sendMail2 = $contactModel->sendContactMailToUser($company_name, $name, $company_url, $postal_code, $prefectures, $city, $address,  $phone, $email, $fax, $mobile_number, $inquiry, $content);
 
                     ob_start();
-                    header('Location: complete.php');
+                    header('Location: complete');
                     exit();
                     // if ($sendMail==1) {
                     //     ob_start();

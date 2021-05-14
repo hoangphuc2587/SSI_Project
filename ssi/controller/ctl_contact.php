@@ -6,6 +6,7 @@
     {
         $name=$_POST['name'];
         $company_name=$_POST['company-name'];
+        $company_url=$_POST['company-url'];
         $code = $_POST['code'];
         $state = $_POST['state'];
         $city = $_POST['city'];
@@ -35,8 +36,8 @@
             $tmpimg3 = $_FILES['image3']['tmp_name'];
         }else{$img3=""; $tmpimg3="";}
 
-        $sendMail = $contactModel->sendContactMailToAdmin($name, $company_name, $code, $state, $city, $address, $phone, $email, $fax, $mobile_number, $maker, $content, $img1, $tmpimg1, $img2, $tmpimg2, $img3, $tmpimg3);
-        $sendMail2 = $contactModel->sendContactMailToUser($name, $company_name, $code, $state, $city, $address, $phone, $email, $fax, $mobile_number, $maker, $content, $img1, $tmpimg1, $img2, $tmpimg2, $img3, $tmpimg3);
+        $sendMail = $contactModel->sendContactMailToAdmin($name, $company_name, $company_url, $code, $state, $city, $address, $phone, $email, $fax, $mobile_number, $maker, $content, $img1, $tmpimg1, $img2, $tmpimg2, $img3, $tmpimg3);
+        $sendMail2 = $contactModel->sendContactMailToUser($name, $company_name, $company_url, $code, $state, $city, $address, $phone, $email, $fax, $mobile_number, $maker, $content, $img1, $tmpimg1, $img2, $tmpimg2, $img3, $tmpimg3);
         if ($sendMail==1) {
             //$result=1;
             header("Location: ./completion.php");

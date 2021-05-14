@@ -36,7 +36,7 @@
     <!-- solution_ryutsu css -->
     <link rel="stylesheet" href="css/solution_ryutsu.css" />
     <link rel="stylesheet" href="scrollbar/scrollbar_vista.css" />
-	<?php include 'partials/analytics.php'; ?>
+    <?php include 'partials/analytics.php'; ?>
 </head>
 
 <body>

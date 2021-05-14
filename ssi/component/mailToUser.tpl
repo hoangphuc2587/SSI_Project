@@ -1,5 +1,6 @@
 お名前: {1}
 会社名: {2}
+会社URL: {13}
 ご住所: 
 &nbsp;&nbsp;&nbsp;&nbsp;〒 {3} 
 &nbsp;&nbsp;&nbsp;&nbsp;{4} {5} {6}

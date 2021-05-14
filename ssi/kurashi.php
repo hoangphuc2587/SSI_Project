@@ -217,7 +217,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php">
+                                <a href="/pmsqets.php">
                                     <img src="images/kurashi/IPROS8838307424943006954.png" alt="" class="kurashi-pc"/>
                                     <img src="images/kurashi/sp/IPROS8838307424943006954.png" alt="" class="kurashi-sp"/>
                                 </a> 
@@ -272,7 +272,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                               <a href="/product_sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
+                               <a href="/sgs.php"><img src="images/kurashi/sgs.png" alt="" /></a>
                             </div>
                         </div>    
                     </div>
@@ -348,7 +348,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php">
+                                <a href="/pmsqets.php">
                                     <img src="images/kurashi/IPROS8838307424943006954.png" alt="" class="kurashi-pc"/>
                                     <img src="images/kurashi/sp/IPROS8838307424943006954.png" alt="" class="kurashi-sp"/>
                                 </a>
@@ -400,7 +400,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12 logo">
-                                <a href="/product_pms.php">
+                                <a href="/pmsqets.php">
                                     <img src="images/kurashi/IPROS8838307424943006954.png" alt="" class="kurashi-pc"/>
                                     <img src="images/kurashi/sp/IPROS8838307424943006954.png" alt="" class="kurashi-sp"/>
                                 </a> 

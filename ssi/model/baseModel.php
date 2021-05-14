@@ -7,7 +7,7 @@ Class baseModel {
 
     function __construct(){
         //Connect to DB
-        $this->db = new Database("localhost", "ssi-user", "sKuTmh2w!", "ssi-db");
+        $this->db = new Database("localhost", "test-ssi-user", "O~6HHX0)uVGb", "test-ssi-db");
 
     }
 

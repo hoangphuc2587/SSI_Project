@@ -53,6 +53,7 @@ $(document).ready(function () {
             $("#policy").css("display", "none");
             window.scrollTo({ top: 0, behavior: 'smooth' });
             $("#company-name").text($('input[name=company-name]').val());
+            $("#company-url").text($('input[name=company-url]').val());
             $("#name").text($('input[name=name]').val());
             $("#code").text($('input[name=code]').val() + ' - ' + $('input[name=code02]').val());
             $("#state").text($('input[name=state]').val());
@@ -63,7 +64,8 @@ $(document).ready(function () {
             $("#fax").text($('input[name=fax]').val());
             $("#phoneRequest").text($('input[name=phoneRequest]').val());
             $("#inquiryItem").text($('select[name=inquiry]').val());
-            $("#content").text($('textarea[name=content]').val());
+	    $("#content").text($('textarea[name=content]').val());
+	    $("#content").css("white-space", "pre-wrap");
         }
     });
 
@@ -112,6 +114,7 @@ function checkInput() {
 
     //check require input
     var inputCompanyName = $('input[name=company-name]').val();
+    var inputCompanyUrl = $('input[name=company-url]').val();
     var inputName = $('input[name=name]').val();
     var code = $('input[name=code]').val();
     var code02 = $('input[name=code02]').val();
@@ -150,6 +153,15 @@ function checkInput() {
         result = false;
 	} else {
         $('#errInputCompanyName').html('');
+    }
+
+    //companyUrl
+    if (inputCompanyUrl.length > 256) {
+        $('#errInputCompanyUrl').html(strErrLength);
+        errPlace.push(12);
+        result = false;
+    } else {
+        $('#errInputCompanyUrl').html('');
     }
 
     //customerName
@@ -375,6 +387,9 @@ function checkInput() {
                 break;
             case 11:
                 $('input[name=ckbAgree]').focus();
+                break;
+            case 12:
+                $('input[name=company-url]').focus();
                 break;
             default:
         }

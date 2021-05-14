@@ -95,7 +95,7 @@
                     <h3 class="ttl-underline">
                         <span>お問い合わせフォーム</span>
                     </h3>
-                    <form action="./ctl_sendMail.php" method="post" enctype="multipart/form-data" class="h-adr" id="a2">
+                    <form action="./ctl_sendMail" method="post" enctype="multipart/form-data" class="h-adr" id="a2">
                         <div class="block-form">
                             <table>
                                 <tr>
@@ -104,6 +104,14 @@
                                     <td>
                                         <input class="input" type="text" name="company-name">
                                         <span class="errMessage" id="errInputCompanyName"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>会社URL
+                                    </th>
+                                    <td>
+                                        <input class="input" type="text" name="company-url">
+                                        <span class="errMessage" id="errInputCompanyUrl"></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -232,7 +240,7 @@
 <!--                                </p>-->
 <!--                                edit sba end-->
                                 <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
-                                <button id="confirm" type="submit" name="submit" style="display: none;"></button>
+                                <input id="confirm" type="submit" name="submit" style="display: none;"/>
                             </div>
                         </div>
                     </form>
@@ -250,6 +258,12 @@
                                         <th> 会社名</th>
                                         <td>
                                             <p id="company-name"></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th> 会社URL</th>
+                                        <td>
+                                            <p id="company-url"></p>
                                         </td>
                                     </tr>
                                     <tr>

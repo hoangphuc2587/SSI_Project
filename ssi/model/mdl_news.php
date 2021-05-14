@@ -111,4 +111,89 @@ class NewsModel extends baseModel
         error_log(var_dump($imgArr));
         return $imgArr;
     }
+
+    public function getNews($id)
+    {
+        $sql = "SELECT * FROM t_news WHERE delete_flag = 0 AND display_flag=1 AND id = " . $id . "";
+
+        $news = new TNews();
+        $result = $this->db->query($sql);
+        if ($result['success'] == true) {
+            $data =  $result['rows'];
+            foreach ($data as $row) {
+
+                $news->setId($row['id']);
+                $news->setTitle($row['title']);
+                $news->setContent($row['content']);
+                $news->setImage($row['image']);
+                $news->setCreateUser($row['create_user']);
+                $news->setCreateDate($row['create_date']);
+                $news->setUpdateUser($row['update_user']);
+                $news->setUpdateDate($row['update_date']);
+                $news->setDisplayDate($row['display_date']);
+                $news->setDeleteFlag($row['delete_flag']);
+            }
+        } else {
+            echo "An error has occurred: " . $result['error'] . "<br />";
+        }
+        return $news;
+    }
+
+    public function getNewsNext($id)
+    {
+        $sql = "SELECT * FROM t_news WHERE delete_flag = 0 AND display_flag=1 AND id = (select max(id) from t_news where delete_flag = 0 AND display_flag=1 AND id < " . $id . " )";
+
+        $news = new TNews();
+        $result = $this->db->query($sql);
+        if ($result['success'] == true) {
+            $data =  $result['rows'];
+            foreach ($data as $row) {
+
+                $news->setId($row['id']);
+            }
+        } else {
+            echo "An error has occurred: " . $result['error'] . "<br />";
+        }
+        return $news;
+    }
+
+    public function getNewsPrevious($id)
+    {
+        $sql = "SELECT * FROM t_news WHERE delete_flag = 0 AND display_flag=1 AND id = (select min(id) from t_news where delete_flag = 0 AND display_flag=1 AND id > " . $id . " )";
+
+        $news = new TNews();
+        $result = $this->db->query($sql);
+        if ($result['success'] == true) {
+            $data =  $result['rows'];
+            foreach ($data as $row) {
+
+                $news->setId($row['id']);
+            }
+        } else {
+            echo "An error has occurred: " . $result['error'] . "<br />";
+        }
+        return $news;
+    }
+
+    public function getAllNewsId()
+    {
+        $listNewsId = array();
+        $sql = "SELECT * FROM t_news WHERE delete_flag = 0 AND display_flag=1 ORDER BY display_date DESC ";
+
+        $result = $this->db->query($sql);
+        if ($result['success'] == true) {
+            $data =  $result['rows'];
+            foreach ($data as $row) {
+
+                $news = new TNews();
+                $news->setId($row['id']);
+
+                array_push($listNewsId, $news);
+            }
+        } else {
+            echo "An error has occurred: " . $result['error'] . "<br />";
+        }
+        return $listNewsId;
+    }
+
 }

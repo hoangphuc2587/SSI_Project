@@ -68,13 +68,11 @@ Class MailHandler {
 
         $filePath = TMPL_DIR_MAIL . TMPL_MAIL_ADMIN;
         $text = file_get_contents($filePath);
-        $text = str_replace(array("\r\n", "\r", "\n"), "<br/>", $text); // 改行を\nへ
         $text = $this->replaceParams($text, $params); // テンプレートの文字列置換
-        //$subject = "お問い合わせのご連絡";
-		date_default_timezone_set("Japan");
-		$now =  date('yy/m/d H:i:s');
+        $text = str_replace(array("\r\n", "\r", "\n"), "<br/>", $text); // 改行を\nへ
+        date_default_timezone_set("Japan");
+        $now =  date('yy/m/d H:i:s');
         $subject = "お問い合わせのご連絡[ ".$now." ]";
-
         $this->sendMail($text, $mailToAdmin, $subject); // テンプレートの文字列置換
     }
     
@@ -87,15 +85,13 @@ Class MailHandler {
         $userInfo = str_replace(array("\r\n", "\r", "\n"), "<br/>", $userInfo); 
         $textMail = str_replace(array("\r\n", "\r", "\n"), "<br/>", $mailContent); 
         $Mail = $this->replaceParams($textMail, $userInfo); 
-        $text = $this->replaceParams($Mail, $params); 
-
-       // $subject = "【株式会社ソフトウエア・サイエンス】お問い合わせありがとうございます。";  
-	    date_default_timezone_set("Japan");
+        $text = $this->replaceParams($Mail, $params);
+        date_default_timezone_set("Japan");
         $now =  date('yy/m/d H:i:s');
         $subject = "【株式会社ソフトウエア・サイエンス】お問い合わせありがとうございます。[ ".$now." ]";
         $contactGuest=array();
         array_push($contactGuest, $email);
-        $this->sendMail($text, $contactGuest, $subject); //
+        $this->sendMail($text, $contactGuest, $subject);
     }
 
     private function sendMail($body, $address, $subject) {
@@ -116,14 +112,16 @@ Class MailHandler {
         
         foreach ($address as $key => $value) {
             $mail->addAddress($value);
+	    //for test
+	    //$mail->addAddress("dtnthach@starboardasia.com");
         }
         $mail->WordWrap = 50;       //Sets word wrapping on the body of the message to a given number of characters
         $mail->IsHTML(true);       //Sets message type to HTML    
         $mail->Subject = $subject;
 
         $mail->Body =$body; 
-//$mail->SMTPDebug=1;
-error_log("send mail start"); 
+	//$mail->SMTPDebug=1;
+	error_log("send mail start"); 
         if($mail->Send())        //Send an Email. Return true on success or false on error
         {
             return 1;

@@ -3,7 +3,7 @@ include 'controller/ctl_news.php';
 
 $newsController = new NewsController();
 $newsModel = new NewsModel();
-$limit = 5;
+$limit = 10;
 $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
 
 $total_records = $newsModel->countNews();
@@ -54,6 +54,7 @@ if ($total_records > 0) {
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/news.css" />
+    <link rel="stylesheet" href="css/pagination2.css" />
     <link rel="stylesheet" media="print" href="css/print.css" />
     <?php include 'partials/analytics.php'; ?>
 </head>
@@ -64,7 +65,7 @@ if ($total_records > 0) {
     <div class="news bg-green03" <?php if ($total_records==0){ echo 'style="background-color: transparent"';} ?>>
         <!-- sub visual -->
         <div class="sub-visual">
-            <h2 class="sub-visual-txt">新着情報</h2>
+            <h2 class="sub-visual-txt">新着情報一覧</h2>
         </div>
 
         <!-- news list -->
@@ -79,28 +80,14 @@ if ($total_records > 0) {
                     if ($total_records) {
                         foreach ($listNews as &$news) { ?>
                             <li class="news-list-item one-img break-print">
-                            <span class="anchor" id=<?= $news->getId(); ?>></span>
+                            <span class="anchor"></span>
                                     <div class="news-list-head">
                                         <p class="btn-wrapper">
                                             <span class="btn btn_news"><span><?php echo str_replace('-', '.', $news->getDisplayDate()); ?></span></span>
                                         </p>
-                                        <p class="news-list-ttl"><?php echo $news->getTitle(); ?> </p>
+                                        <p class="news-list-ttl"><a href="newsdetail.php?id=<?php echo $news->getId(); ?>"><?php echo $news->getTitle(); ?> </a></p>
                                     </div>
-                                    <div class="neanchorws-list-content">
-                                        <div class="txt">
-                                            <?php echo $news->getContent(); ?>
-                                        </div>
-                                        <ul class="news-list-img">
-                                            <?php if ($news->getImage() != null || $news->getImage() != "") {
-                                                $listImage = explode(",", $news->getImage());
-                                                foreach ($listImage as &$image) {
-                                            ?>
-                                                    <li> <img src="images/news/<?php echo $image; ?>" alt="news"></li>
-                                            <?php }
-                                            } ?>
-
-                                        </ul>
-                                    </div>
+                                    
                             </li>
                     <?php }
                     }else{
@@ -109,7 +96,7 @@ if ($total_records > 0) {
                 </ul>
 
                 <!-- pagination -->
-                <?php include 'pagination.php'; ?>
+                <?php include 'pagination2.php'; ?>
                
             </div>
         </div>

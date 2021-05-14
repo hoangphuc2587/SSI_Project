@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/contact.css" />
-	<?php include 'partials/analytics.php'; ?>
+    <?php include 'partials/analytics.php'; ?>
 </head>
 
 <body>

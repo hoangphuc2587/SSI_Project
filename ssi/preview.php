@@ -44,7 +44,7 @@ if (isset($_GET['preview'])) {
     <!--css-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/nav.css" />
-	<?php include 'partials/analytics.php'; ?>
+
 </head>
 
 <body>

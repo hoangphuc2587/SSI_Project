@@ -71,10 +71,10 @@ $listNews = $newsController->getListNewsHome();
   <article class="mainvisual">
     <div class="mainvisual-slide pc">
       <div class="mainvisual-slide-item">
-        <a href ="product_pms.php"><img src="images/index/mv01.jpg" alt="mv 01"></a>
+        <a href ="pmsqets.php"><img src="images/index/mv01.jpg" alt="mv 01"></a>
       </div>
       <div class="mainvisual-slide-item">
-        <a href ="product_sgs.php"><img src="images/index/mv02.png" alt="mv 02"></a>
+        <a href ="sgs.php"><img src="images/index/mv02.png" alt="mv 02"></a>
       </div>
       <div class="mainvisual-slide-item">
         <a href ="kurashi.php"><img src="images/index/mv03.jpg" alt="mv 03"></a>
@@ -82,10 +82,10 @@ $listNews = $newsController->getListNewsHome();
     </div>
     <div class="mainvisual-slide sp">
       <div class="mainvisual-slide-item">
-        <a href ="product_pms.php"><img src="images/index/mv01_sp.jpg" alt="mv 01"></a>
+        <a href ="pmsqets.php"><img src="images/index/mv01_sp.jpg" alt="mv 01"></a>
       </div>      
       <div class="mainvisual-slide-item">
-        <a href ="product_sgs.php"><img src="images/index/mv02_sp.png" alt="mv 02"></a>
+        <a href ="sgs.php"><img src="images/index/mv02_sp.png" alt="mv 02"></a>
       </div>
       <div class="mainvisual-slide-item">
         <a href ="kurashi.php"><img src="images/index/mv03_sp.jpg" alt="mv 03"></a>
@@ -135,10 +135,10 @@ $listNews = $newsController->getListNewsHome();
                 </div>
                 <div class='column'>
                   <div class='item'>
-                    <a href="product_pms.php" title="PmSQETs">PmSQETs</a>
+                    <a href="pmsqets.php" title="PmSQETs">PmSQETs</a>
                   </div>
                   <div class='item'>
-                    <a href="product_sgs.php" title="SGS">SGS</a>
+                    <a href="sgs.php" title="SGS">SGS</a>
                   </div>
                 </div>
               </div>
@@ -166,12 +166,12 @@ $listNews = $newsController->getListNewsHome();
               <div class='row'>
                 <div class='column'>
                   <div class='item'>
-                    <a href="product_pms.php" title="PmSQETs">PmSQETs</a>
+                    <a href="pmsqets.php" title="PmSQETs">PmSQETs</a>
                   </div>
                 </div>
                 <div class='column'>
                   <div class='item'>
-                    <a href="product_sgs.php" title="SGS">SGS</a>
+                    <a href="sgs.php" title="SGS">SGS</a>
                   </div>
                 </div>
               </div>
@@ -221,8 +221,8 @@ $listNews = $newsController->getListNewsHome();
           <div class="accordion_inner">
             <div class="box_one">
               <div class="box_one_txt">
-                <a href="product_pms.php" title="PmSQETs">PmSQETs</a>
-                <a href="product_sgs.php" title="SGS">SGS</a>
+                <a href="pmsqets.php" title="PmSQETs">PmSQETs</a>
+                <a href="sgs.php" title="SGS">SGS</a>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ $listNews = $newsController->getListNewsHome();
           </ul>
           <div class="btn-wrapper absolute">
               <div class="border_wp">
-                  <a href="about.php" class="btn_sgpm">SSIとは？<span class="btn_cl"></span> </a>
+                  <a href="about.php" class="btn_sgpm">SSIとは<span class="btn_cl"></span> </a>
                   <span class="btn-border-psg"></span>
               </div>
           </div>
@@ -409,7 +409,7 @@ $listNews = $newsController->getListNewsHome();
           if ($total_records) :
             foreach ($listNews as &$news) : ?>
               <li class="topics-list-item">
-                <a href='news.php#<?= $news->getId(); ?>'>
+                <a href="newsdetail.php?id=<?php echo $news->getId(); ?>">
                   <p class="datetime"><?= str_replace('-', '.', $news->getDisplayDate()); ?></p>
                   <p class="txt"><?= $news->getTitle(); ?></p>
                 </a>

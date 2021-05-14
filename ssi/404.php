@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/404.css" />
     <link rel="stylesheet" href="/scrollbar/scrollbar_vista.css" />
-	<?php include 'partials/analytics.php'; ?>
+    <?php include 'partials/analytics.php'; ?>
 </head>
 
 <body>

@@ -11,16 +11,16 @@
             <nav class="nav navi-pc">
                 <ul class="navbar-nav">
                     <li class="navbar-item dropdown">
-                        <a href="#">SSIとは？ </a>
+                        <a href="#">企業情報</a>
                         <div class="dropdown-menu" style="display: none;">
                             <ul class="dropdown-menu-child">
                                 <li><a class="" href="/about.php">SSIとは</a></li>
+                                <li><a class="" href="/company.php">会社概要・アクセス</a></li>
                                 <li><a class="" href="/kurashi.php">暮らしを支えるSSI</a></li>
                                 <li><a class="" href="/sdgs.php">SDGsへの取り組み</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="navbar-item"><a href="/company.php">会社案内</a></li>
                     <li class="navbar-item dropdown">
                         <a href="#">領域別ソリューション </a>
                         <div class="dropdown-menu" style="display: none;">
@@ -36,8 +36,8 @@
                         <a href="#">製品情報 </a>
                         <div class="dropdown-menu" style="display: none;">
                             <ul class="dropdown-menu-child">
-                                <li><a class="" href="/product_pms.php">PmSQETs</a></li>
-                                <li><a class="" href="/product_sgs.php">SGS</a></li>
+                                <li><a class="" href="/pmsqets.php">PmSQETs</a></li>
+                                <li><a class="" href="/sgs.php">SGS</a></li>
                             </ul>
                         </div>
                     </li>
@@ -74,8 +74,8 @@
                         <a href="#">製品情報 </a>
                         <div class="naviExtra" style="display: none;">
                             <ul class="dropdown-menu-child">
-                                <li class="navbar-item-sp submenu"><a class="" href="/product_pms.php">PmSQETs</a></li>
-                                <li class="navbar-item-sp submenu"><a class="" href="/product_sgs.php">SGS</a></li>
+                                <li class="navbar-item-sp submenu"><a class="" href="/pmsqets.php">PmSQETs</a></li>
+                                <li class="navbar-item-sp submenu"><a class="" href="/sgs.php">SGS</a></li>
                             </ul>
                         </div>
                         

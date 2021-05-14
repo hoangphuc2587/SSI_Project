@@ -219,7 +219,7 @@
                                 <div class="PmS-gradient-border"></div>
                                 <div class="pmsdiv">
                                     <p class="ryu-btn-wrapper1 absolute">
-                                        <a href="product_pms.php" class="btn rei_btn"><span>PmSQETsとは？</span></a>
+                                        <a href="pmsqets.php" class="btn rei_btn"><span>PmSQETsとは？</span></a>
                                     </p>
                                     <p class="pmstxt">業務フロー・シナリオフロー中心設計技法によるソフトウェア設計の自動化、トレーサビリティ環境を実現する高速設計・開発ソリューション</p>
                                     <img class="pmsimg" src="images/service/PmSQETs.png">

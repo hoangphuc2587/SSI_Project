@@ -17,4 +17,28 @@ class NewsController
         $listNews = $newsModel->getAllNewsHome();
         return $listNews;
     }
+    public function getNews($id)
+    {
+        $newsModel = new NewsModel();
+        $news = $newsModel->getNews($id);
+        return $news;
+    }
+    public function getNewsNext($id)
+    {
+        $newsModel = new NewsModel();
+        $news = $newsModel->getNewsNext($id);
+        return $news;
+    }
+    public function getNewsPrevious($id)
+    {
+        $newsModel = new NewsModel();
+        $news = $newsModel->getNewsPrevious($id);
+        return $news;
+    }
+    public function getNewsAllId()
+    {
+        $newsModel = new NewsModel();
+        $news = $newsModel->getAllNewsId();
+        return $news;
+    }
 }

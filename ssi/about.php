@@ -21,7 +21,7 @@
     <!--OGP-->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.ssi.co.jp/" />
-    <meta property="og:title" content="SSIとは？｜株式会社ソフトウエア・サイエンス（SSI）" />
+    <meta property="og:title" content="SSIとは｜株式会社ソフトウエア・サイエンス（SSI）" />
 
     <meta property="og:site_name" content="SSI" />
     <meta property="og:description" content="企業理念「いつもお客様のそばで。」私たちは、SRAホールディングス（東京証券取引所第一部上場）グループ企業として、「中堅企業向けのサービス・イノベーション」を展開する役割を担っています。" />
@@ -44,7 +44,7 @@
     <div class="aboutUs">
         <!-- sub visual -->
         <div class="sub-visual">
-            <h2 class="sub-visual-txt">SSIとは？</h2>
+            <h2 class="sub-visual-txt">SSIとは</h2>
         </div>
 
         <div class="polygon01"><img style="height: 10px;" src="images/aboutus/polygon01.png" alt="polygon 01"></div>
