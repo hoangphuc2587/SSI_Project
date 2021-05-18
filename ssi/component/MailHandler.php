@@ -64,12 +64,16 @@ Class MailHandler {
         $this->__body = $body;
     }
 
-    public function sendMailToAdmin($params, $mailToAdmin ){
+    public function sendMailToAdmin($params, $mailToAdmin, $mailContent){
 
         $filePath = TMPL_DIR_MAIL . TMPL_MAIL_ADMIN;
         $text = file_get_contents($filePath);
         $text = $this->replaceParams($text, $params); // テンプレートの文字列置換
-        $text = str_replace(array("\r\n", "\r", "\n"), "<br/>", $text); // 改行を\nへ
+        $userInfo = array('content'=>$text);
+        $userInfo = str_replace(array("\r\n", "\r", "\n"), "<br/>", $userInfo); 
+        $textMail = str_replace(array("\r\n", "\r", "\n"), "<br/>", $mailContent); 
+        $Mail = $this->replaceParams($textMail, $userInfo); 
+        $text = $this->replaceParams($Mail, $params);
         date_default_timezone_set("Japan");
         $now =  date('yy/m/d H:i:s');
         $subject = "お問い合わせのご連絡[ ".$now." ]";

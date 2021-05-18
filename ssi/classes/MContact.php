@@ -3,6 +3,7 @@ Class MContact {
 	private $__id;
 	private $__receptionMail;
 	private $__autoMailContent;
+    private $__autoMailContentAdmin;
 	private $__updateDate;
 	private $__updateUser;
 	//GET
@@ -14,6 +15,9 @@ Class MContact {
     }
     public function getAutoMailContent(){
        return $this->__autoMailContent;
+    }
+    public function getAutoMailContentAdmin(){
+       return $this->__autoMailContentAdmin;
     }
     public function getUpdateDate(){
        return $this->__updateDate;
@@ -31,6 +35,9 @@ Class MContact {
     public function setAutoMailContent($autoMailContent){
         $this->__autoMailContent = $autoMailContent;
     }
+    public function setAutoMailContentAdmin($autoMailContentAdmin){
+        $this->__autoMailContentAdmin = $autoMailContentAdmin;
+    }    
     public function setUpdateDate($updateDate){
         $this->__updateDate = $updateDate;
     }
