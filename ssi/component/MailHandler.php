@@ -75,7 +75,7 @@ Class MailHandler {
         $Mail = $this->replaceParams($textMail, $userInfo); 
         $text = $this->replaceParams($Mail, $params);
         date_default_timezone_set("Japan");
-        $now =  date('yy/m/d H:i:s');
+        $now =  date('Y/m/d H:i:s');
         $subject = "お問い合わせのご連絡[ ".$now." ]";
         $this->sendMail($text, $mailToAdmin, $subject); // テンプレートの文字列置換
     }
@@ -91,7 +91,7 @@ Class MailHandler {
         $Mail = $this->replaceParams($textMail, $userInfo); 
         $text = $this->replaceParams($Mail, $params);
         date_default_timezone_set("Japan");
-        $now =  date('yy/m/d H:i:s');
+        $now =  date('Y/m/d H:i:s');
         $subject = "【株式会社ソフトウエア・サイエンス】お問い合わせありがとうございます。[ ".$now." ]";
         $contactGuest=array();
         array_push($contactGuest, $email);

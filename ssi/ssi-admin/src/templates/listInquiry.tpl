@@ -29,6 +29,11 @@
                 </tbody>
             </table>
         </div>
+        <ul class="list-button" style="padding-top:50px">
+            <li>
+                <a href="./?rt=contactModify"><button class="button02 btnBack" id="btnBack">一覧へ</button></a>
+            </li>            
+        </ul>
     </div>
 </main>
 
