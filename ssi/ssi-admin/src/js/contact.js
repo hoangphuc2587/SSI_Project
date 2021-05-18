@@ -20,12 +20,14 @@ jQuery(document).ready(function($){
 				mail= mail.replace(" ","");
 			}
 			var contentMail= CKEDITOR.instances.contentMail.getData();
+			var contentMailAdmin= CKEDITOR.instances.contentMailAdmin.getData();
 			if (id!='') {
 				var postData = {
 		        	id:id,
 		        	currentUser:currentUser,
 		        	mail:mail,
-		        	contentMail:contentMail
+		        	contentMail:contentMail,
+		        	contentMailAdmin:contentMailAdmin
 		        };
 				//Call ajax for update Display Flag to DB
 				$.ajax({
@@ -47,7 +49,8 @@ jQuery(document).ready(function($){
 				var postData = {
 		        	currentUser:currentUser,
 		        	mail:mail,
-		        	contentMail:contentMail
+		        	contentMail:contentMail,
+		        	contentMailAdmin:contentMailAdmin
 		        };
 				//Call ajax for update Display Flag to DB
 				$.ajax({
@@ -75,20 +78,24 @@ function inputCheck(isInsert){
 
 	var mail = $('input[name=mail]').val();
 	var contentMail=CKEDITOR.instances.contentMail.getData();
+	var contentMailAdmin=CKEDITOR.instances.contentMailAdmin.getData();
 	var strErr = "";
 
 	//Require check
-	strErr = requireCheck(mail, contentMail);
+	strErr = requireCheck(mail, contentMail, contentMailAdmin);
 	if(strErr == ""){
 		//Mail type check
 		strErr = mailCheck(mail);
 	}
 	return strErr;
 }
-function requireCheck(mail, contentMail){
+function requireCheck(mail, contentMail, contentMailAdmin){
 	if(contentMail == ""){
 		return "自動返信メール表示用内容を入力してください。";
 	}
+	if(contentMailAdmin == ""){
+		return "自動返信メール表示用内容(Admin)を入力してください。";
+	}	
 	if(mail == ""){
 		return "メールアドレスを入力してください。";
 	}

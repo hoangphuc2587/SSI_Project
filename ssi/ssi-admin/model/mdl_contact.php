@@ -17,6 +17,7 @@ Class ContactModel Extends baseModel{
 			    $contact->setId($row['id']);
 			    $contact->setReceptionMail($row['reception_mail']);
 			    $contact->setAutoMailContent($row['auto_mail_content']);
+			    $contact->setAutoMailContentAdmin($row['auto_mail_content_admin']);
 			    $contact->setUpdateDate($row['update_date']);
 			    $contact->setUpdateUser($row['update_user']);
 			}
@@ -31,6 +32,7 @@ Class ContactModel Extends baseModel{
 			    $contact->setId($txt);
 			    $contact->setReceptionMail($txt);
 			    $contact->setAutoMailContent($txt);
+			    $contact->setAutoMailContentAdmin($txt);
 			    $contact->setUpdateDate($txt);
 			    $contact->setUpdateUser($txt);
 			}
@@ -41,11 +43,11 @@ Class ContactModel Extends baseModel{
         return $contact;
     }
 
-    public function editContact($id, $currentUser, $mail, $contentMail) {
-        $result = $this->db->update("UPDATE m_contact SET reception_mail='$mail', auto_mail_content='$contentMail', update_date=NOW(),update_user='$currentUser' WHERE id='$id'");
+    public function editContact($id, $currentUser, $mail, $contentMail, $contentMailAdmin) {
+        $result = $this->db->update("UPDATE m_contact SET reception_mail='$mail', auto_mail_content='$contentMail', auto_mail_content_admin='$contentMailAdmin', update_date=NOW(),update_user='$currentUser' WHERE id='$id'");
     }
-    public function addContact($currentUser, $mail, $contentMail) {
-        $result = $this->db->update("INSERT INTO m_contact (`reception_mail`, `auto_mail_content`, `update_user`) VALUES ('$mail','$contentMail','$currentUser')");
+    public function addContact($currentUser, $mail, $contentMail, $contentMailAdmin) {
+        $result = $this->db->update("INSERT INTO m_contact (`reception_mail`, `auto_mail_content`, `auto_mail_content_admin` , `update_user`) VALUES ('$mail','$contentMail','$contentMailAdmin','$currentUser')");
     	// return $result;
     }
 }

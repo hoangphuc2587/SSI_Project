@@ -32,7 +32,7 @@ Class ContactModifyController Extends baseController {
                                                       "value" => $contact->getAutoMailContent());
 													  
         $this->registry->template->contentMailAdmin = array( "name" => "contentMailAdmin",
-                                                      "value" => '');													  
+                                                      "value" => $contact->getAutoMailContentAdmin());													  
         $this->registry->template->id = array( "name" => "id",
                                                       "value" => $contact->getId());
 
@@ -44,8 +44,9 @@ Class ContactModifyController Extends baseController {
         $currentUser = $request['currentUser'];
         $mail = $request['mail'];
         $contentMail = $request['contentMail'];
+        $contentMailAdmin = $request['contentMailAdmin'];
         $contactModel = new ContactModel();
-        $contact =$contactModel->editContact($id, $currentUser, $mail, $contentMail);
+        $contact =$contactModel->editContact($id, $currentUser, $mail, $contentMail, $contentMailAdmin);
         echo json_encode(array("result"=>$contact));
     }
     public function add(){
@@ -53,8 +54,9 @@ Class ContactModifyController Extends baseController {
         $currentUser = $request['currentUser'];
         $mail = $request['mail'];
         $contentMail = $request['contentMail'];
+        $contentMailAdmin = $request['contentMailAdmin'];
         $contactModel = new ContactModel();
-        $contact =$contactModel->addContact($currentUser, $mail, $contentMail);
+        $contact =$contactModel->addContact($currentUser, $mail, $contentMail, $contentMailAdmin);
         echo json_encode(array("result"=>$contact));
     }
 }
