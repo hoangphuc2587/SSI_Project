@@ -8,6 +8,7 @@
             <div class="block-contact">
                 <div class="head">
                     <h2 class="headline">お問い合わせ情報管理</h2>
+                    <a href="./?rt=inquiryList" class="button02">お問い合わせの種類</a>
                 </div>
                 <div class="block-inner">
                     <dl class="group-form">
