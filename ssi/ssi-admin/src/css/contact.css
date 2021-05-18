@@ -1,0 +1,152 @@
+.contact-his-img {
+    display: block;
+    margin: 10px auto;
+}
+
+.contact-history th,
+.contact-history td {
+    font-size: 12px;
+    padding: 10px 5px;
+    word-break: break-word;
+}
+
+.contact-history td .btn {
+    font-size: 12px;
+}
+
+.pagination li a {
+    /* background: #1c4364; */
+    border-color: #63B85C;
+    /* color: #fff; */
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus,
+.pagination li a:hover {
+    background: #63B85C;
+    text-decoration: none;
+    border-color: #63B85C;
+    color: #fff;
+}
+
+.contact-pagination {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.contact-pagination .pagination>li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+
+.contact-pagination .pagination .disabled {
+    background-color: rgb(235, 235, 228);
+}
+
+.head .btn {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #1c4364 50%, #2aabd2 50%);
+    -moz-transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
+    -o-transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
+    -webkit-transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1), color 0.5s ease, background-color 0.5s ease;
+    -webkit-transition-delay: 0.1s, 0s, 0s;
+    transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
+    background-size: 200% 100%;
+    color: #fff;
+}
+
+.head .btn:hover {
+    background-color: #f2a76f;
+    background-position: -100% 100%;
+    color: #fff;
+}
+
+#contactHistory .attachment-files {
+    margin-bottom: 35px;
+}
+
+#contactHistory .attachment-files a {
+    font-size: 16px;
+}
+
+.contact-history .group-table td {
+    padding: 10px 5px;
+    text-align: left;
+    word-break: break-word;
+}
+.contact-history .group-table th {
+    width: 114px;
+    word-break: break-word;
+}
+.medium-column {
+    min-width: 140px;
+}
+.long-column {
+    min-width: 230px;
+}
+.small-column {
+    width: 35px !important;
+}
+
+.contact-history .group-table .center {
+    text-align: center;
+}
+
+#contactHistory .title-file {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/*.table-column-width .phone {
+    width: 99px;
+}
+
+.table-column-width .create-date {
+    width: 164px;
+}
+
+.table-column-width .area {
+    width: 83px;
+}
+
+.table-column-width .phone-code {
+    width: 32px;
+}
+
+.table-column-width .contact-type {
+    width: 126px;
+}
+
+.table-column-width .email {
+    width: 230px;
+}
+
+.table-column-width .no {
+    width: 30px;
+}
+
+.table-column-width .content {
+    min-width: 230px;
+}*/

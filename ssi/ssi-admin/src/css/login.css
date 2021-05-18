@@ -1,0 +1,220 @@
+body {
+  background: #fff;
+}
+.title h2 {
+  color: #000;
+  font-size: 35px;
+  margin: 0 0 30px 0;
+  font-weight: bold;
+}
+.login-form .form-control {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 55px;
+  line-height: 50px;
+  color: #707487;
+}
+.main-div {
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
+}
+
+.login-form .form-group {
+  margin-bottom:15px;
+  text-align: center;
+  position: relative;
+}
+.login-form .form-group .btn {
+  font-weight: bold;
+  color: #fff;
+}
+.login-form{ text-align:center;}
+.forgot a {
+  color: #cad0cd;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.forgot a:hover {
+  text-decoration: none;
+}
+.forgot {
+  text-align: center;
+}
+.forgot input {
+  vertical-align: middle;
+  margin-top: 0;
+  margin-right: 5px;
+}
+.inner {
+  width: 613px;
+  margin: 0px auto;
+  max-width: 100%;
+}
+.login-form {
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+.main-div {
+ display: table-cell;
+ text-align: center;
+ vertical-align: middle;
+}
+.input-group .form-control {
+  background-color: #ccc;
+}
+.login-form .btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 5px;
+  position: relative;
+  z-index: 2;
+  /*background-color: #f2c31b;
+  border: 2px solid #f2c31b;
+  color: #fff;*/
+  border-color: #8fca70;
+  background: url("../image/common/bg_btn.jpg");
+  background-size: cover;
+  height: 50px;
+}
+.login-form .btn:hover {
+  /*background-color: #fff;
+  border-color: #f2c31b;
+  color: #f2c31b;*/
+}
+.login-form form {
+  padding: 30px 50px 15px;
+  position: relative;
+  border: solid;
+ /* border-style: solid;*/
+  border-color: #8fca70;
+  -o-border-image: linear-gradient(30deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+  border-image: linear-gradient(30deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+  border-image-slice: 1;
+}
+.login-ico {
+  padding-left: 25px;
+  display: inline-block;
+  height: 34px;
+  width: 42px;
+}
+.login-form .input-group-addon {
+  padding: 6px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+}
+.input-group {
+  margin-bottom: 20px;
+}
+.login-form.forget-form form {
+  background: #fff;
+}
+.forget-form .title-forget{
+  font-size: 17px;
+  color: #000;
+  text-align: left;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.forget-form label {
+  color: #000;
+  text-align: left;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.forget-form .form-control {
+  height:40px;
+}
+.login-form.forget-form  .btn {
+  width: auto;
+  background: #1c4364;
+  border: 1px solid #1c4364;
+  font-size: 16px;
+  padding: 10px 30px;
+}
+#errMessage{
+      color: red;
+}
+.gradient-border {
+  position: absolute;
+  /* width: 80%; */
+  height: 300px;
+  border-width: 1px;
+  margin: 0 auto;
+  top: -17px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+}
+.gradient-border:before {
+    content: ' ';
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    border-width: 1px;
+}
+.gradient-border, .gradient-border:before {
+    border-style: solid;
+    border-color: #8fca70;
+    -o-border-image: linear-gradient(30deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+    border-image: linear-gradient(30deg, #35c4ea 0%, #35c4ea 20%, #8fca70 100%);
+    border-image-slice: 1;
+}
+/*responsive*/
+@media screen and (max-width: 767px) {
+  .login-form .btn {
+    padding: 10px 5px;
+  }
+  .title h2 {
+    font-size: 6vw;
+  }
+  .main-div {
+    padding: 20px;
+  }
+  .login-form form {
+    padding: 8%;
+    padding-bottom: 4%;
+  }
+  .login-form .btn {
+    font-size: 17px;
+  }
+  .login-form .form-control {
+    font-size: 14px;
+    height: 50px;
+  }
+  .login-ico {
+    height: 27px;
+    width: 22px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .login-form form {
+    padding: 5%;
+    padding-bottom: 2%;
+  }
+  .login-form .input-group-addon {
+    font-size: 13px;
+  }
+  .login-ico {
+    height: 20px;
+    width: 20px;
+  }
+  .login-form .form-control {
+    font-size: 12px;
+    height: 43px;
+  }
+  .forgot a {
+    font-size: 13px;
+  }
+  .login-form .btn {
+    font-size: 13px;
+  }
+}

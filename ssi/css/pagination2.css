@@ -1,0 +1,36 @@
+
+.previous2 {
+ 
+    margin-left: 10px !important;
+    float: left!important;
+    
+}
+
+.next2 {
+ 
+    float: right!important;
+}
+
+
+.previous2, .next2 {
+    display: flex;
+    align-items: left!important;
+    background: linear-gradient(
+150deg
+, #8fca70 0%, #8fca70 5%, #35c4ea 71%, #35c4ea 100%);
+    color: white;
+    height: 40px !important;
+    width: 160px;
+    display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-pagination{
+    clear: both;
+    margin-bottom: 30px;
+}

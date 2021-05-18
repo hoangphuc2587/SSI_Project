@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "Input your ID and Password."
+AuthUserFile /var/www/ssi-test/.htpasswd
+require valid-user
+#RewriteCond %{HTTPS} on
+#RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+##RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule    ^$    ssi-admin/    [L]
+#RewriteRule ^index.php$ - [L]

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Input your ID and Password of files."
+AuthUserFile /var/www/ssi-test/files/.htpasswd
+require valid-user
