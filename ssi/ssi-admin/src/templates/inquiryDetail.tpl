@@ -15,17 +15,7 @@
                             <label>お問い合わせの種類</label>
                         </dt>
                         <dd>
-                            <select name="inquiry" id="inquiry">
-                                <option value="0"{if ($id == 0)} selected="selected"{/if}>選択してください。</option>
-                                <option value="1"{if ($id == 1)} selected="selected"{/if}>IT制作やプロジェクトに関するご相談</option>
-                                <option value="2"{if ($id == 2)} selected="selected"{/if}>業務効率化に関するご相談</option>
-                                <option value="3"{if ($id == 3)} selected="selected"{/if}>その他のご相談</option>
-                                <option value="4"{if ($id == 4)} selected="selected"{/if}>資料請求（PmSQETs）</option>
-                                <option value="5"{if ($id == 5)} selected="selected"{/if}>資料請求（SGS）</option>
-                                <option value="6"{if ($id == 6)} selected="selected"{/if}>パートナーについて</option>
-                                <option value="7"{if ($id == 7)} selected="selected"{/if}>採用について</option>
-                                <option value="8"{if ($id == 8)} selected="selected"{/if}>その他</option>
-                            </select>
+                            <input type="text" name="inquiry" id="inquiry" value="{$inquiryType}">
                         </dd>                       
                         <dt>
                             <label>メールアドレス</label>

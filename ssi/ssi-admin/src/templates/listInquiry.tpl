@@ -16,14 +16,20 @@
                 <thead>
                 <tr>                   
                     <th>お問い合わせの種類</th>
-                    <th>メールアドレス</th>                    
+                    <th>メールアドレス</th>
+                    <th class="action">アクション</th>
                 </tr>
+
                 </thead>
                 <tbody>
                  {section name=i loop=$listInquiry}
                   <tr>
                     <td class="inquiryId" data-id="{$listInquiry[i]->getId()}">{$listInquiry[i]->getInquiryType()}</td>
                     <td>{$listInquiry[i]->getReceptionMail()}</td>
+                    <td class="align-center action">
+                        <a href="./?rt=inquiryDetail&id={$listInquiry[i]->getId()}"  class="btnEditCategory"><i class="fas fa-edit fa-2x"></i></a>
+                        <a href="./?rt=inquiryList/delete&id={$listInquiry[i]->getId()}" class="btnDeleteNews"><i class="fas fa-trash-alt fa-2x"></i></a> 
+                    </td>
                   </tr>
                 {/section}
                 </tbody>

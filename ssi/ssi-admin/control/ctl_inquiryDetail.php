@@ -27,16 +27,19 @@ Class InquiryDetailController Extends baseController {
         //Create model object
         $idInquiry = (empty($_GET['id'])) ? 0 : $_GET['id'];
         $receptionMail = '';
+        $inquiryType = '';
 
         if ($idInquiry != ''){
             $inquiryModel = new InquiryEmailModel();
+            
             $inquiryInfo = $inquiryModel->getInquiryInfo($idInquiry);
             $receptionMail = $inquiryInfo->getReceptionMail();
+            $inquiryType = $inquiryInfo->getInquiryType();
         }
 
         //Set list user to template
         $this->registry->template->inquiryType = array( "name" => "inquiryType",
-                                                      "value" => $idInquiry);
+                                                      "value" => $inquiryType);
         $this->registry->template->receptionMail = array( "name" => "receptionMail",
                                                       "value" => $receptionMail);
 
@@ -46,38 +49,14 @@ Class InquiryDetailController Extends baseController {
         $this->registry->template->show('inquiryDetail');
     }
 
-    public function getInquiry(){
-        $request = json_decode(file_get_contents('php://input'), true);
-        $id = $request['inquiry'];
-        $inquiryModel = new InquiryEmailModel();
-        $inquiryInfo =$inquiryModel->getInquiryInfo($id);        
-        $email = '';
-        $id = '0';
-        if (!empty($inquiryInfo)){
-            $email = $inquiryInfo->getReceptionMail();
-            $id = $inquiryInfo->getId();
-        }
-        echo json_encode(array("email"=>$email, 'id' => $id));
-    }
-
     public function update(){
         $request = json_decode(file_get_contents('php://input'), true);
         $id = $request['id'];
         $currentUser = $request['currentUser'];
         $mail = $request['mail'];
-        $inquiry = (int)$request['inquiry'];
-        $inquiryList = array(
-            1 => 'IT制作やプロジェクトに関するご相談',
-            2 => '業務効率化に関するご相談',
-            3 => 'その他のご相談',
-            4 => '資料請求（PmSQETs）',
-            5 => '資料請求（SGS）',
-            6 => 'パートナーについて',
-            7 => '採用について',
-            8 => 'その他'
-        );
+        $inquiry = $request['inquiry'];
         $inquiryModel = new InquiryEmailModel();
-        $contact =$inquiryModel->updateInquiry($id, $currentUser, $inquiryList[$inquiry], $mail);
+        $contact =$inquiryModel->updateInquiry($id, $currentUser, $inquiry, $mail);
         echo json_encode(array("result"=>$contact));
     }
 }

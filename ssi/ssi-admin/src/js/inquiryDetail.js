@@ -3,31 +3,6 @@ jQuery(document).ready(function($){
 	$('.sidebar').removeClass('active');
 	$('#menuContact').addClass('active');
 
-    //Event when change select inquiry
-	$("select[name=inquiry]").change(function() {
-		var inquiry= $(this).val();
-		if (inquiry != '0'){
-			var postData = {
-	        	inquiry:inquiry
-	        };
-            $.ajax({
-				type:'POST',
-				contentType: 'application/json',
-				url: './?rt=inquiryDetail/getInquiry',
-				dataType: "json",
-				data:JSON.stringify(postData),
-				success:function(response) {
-					$('#id').val(response.id);
-					$('#mail').val(response.email);
-				},
-	             error: function() {
-	               
-	            }
-			});
-		}else{
-			$('#mail').val('');
-		}
-	});
 	
     //Event when click update
 	$("#btnUpdateInquiry").click(function() {
@@ -45,7 +20,7 @@ jQuery(document).ready(function($){
 			for(i; i < strLength; i++) {
 				mail= mail.replace(" ","");
 			}
-			var inquiry= $('select[name=inquiry]').val();
+			var inquiry= $('#inquiry').val();
 			if (id!='') {
 				var postData = {
 		        	id:id,
@@ -100,7 +75,7 @@ jQuery(document).ready(function($){
 }); 
 function inputCheck(isInsert){
 
-    var inquiry = $('select[name=inquiry]').val();
+    var inquiry = $('input[name=inquiry]').val();
 	var mail = $('input[name=mail]').val();
 	var strErr = "";
 
@@ -113,7 +88,7 @@ function inputCheck(isInsert){
 	return strErr;
 }
 function requireCheck(mail, inquiry){
-	if(inquiry == "0"){
+	if(inquiry == ""){
 		return "お問い合わせの種類を入力してください。";
 	}	
 	if(mail == ""){
@@ -129,9 +104,9 @@ function mailCheck(mail){
 	// var re = /\s*(?:;|$)\s*,/; 
 	var member_split = mail.split([',']); 
 	var emailReg = /^(\s?[^\s,]+@[^\s,]+\.[^\s,]+\s?,)*(\s?[^\s,]+@[^\s,]+\.[^\s,]+)$/;  
-	if (member_split.length>2) {
-		return '最大2つのメールアドレスを入力してください。';
-	}
+	// if (member_split.length>2) {
+	// 	return '最大2つのメールアドレスを入力してください。';
+	// }
 	for (var n = 0; n < member_split.length; n++) {
 		var member_info = member_split[n];
 		if(!emailReg.test(member_info)) {  

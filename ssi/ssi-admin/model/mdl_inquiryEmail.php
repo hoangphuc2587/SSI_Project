@@ -8,7 +8,7 @@ Class InquiryEmailModel Extends baseModel{
 	public function getAllInquiries(){
 
 		$listInquiry = null;		
-		$query = "SELECT * FROM t_inquiry_email";
+		$query = "SELECT * FROM t_inquiry_email WHERE delete_flag = 0";
 	    $result = $this->db->query($query);
 	    if($result['success'] == true)
 	    {
@@ -27,7 +27,7 @@ Class InquiryEmailModel Extends baseModel{
 
 	 public function getInquiryInfo($id) {
         $inquiry = null;
-	    $result = $this->db->query("SELECT * FROM t_inquiry_email WHERE id =".$id);
+	    $result = $this->db->query("SELECT * FROM t_inquiry_email WHERE delete_flag = 0 AND id =".$id);
 	    if($result['success'] == true && $result['count'] > 0)
 	    {
 	    	$data =  $result['rows'][0];
@@ -45,7 +45,7 @@ Class InquiryEmailModel Extends baseModel{
     	$isExist = false;
     	
 	    // $result = $this->db->query("SELECT COUNT(*) AS COUNT_USER FROM m_login WHERE user_id ='".$userId."' AND delete_flag = 0");
-	    $result = $this->db->query("SELECT COUNT(*) AS COUNT_USER FROM t_inquiry_email WHERE id ='".$id."'");
+	    $result = $this->db->query("SELECT COUNT(*) AS COUNT_USER FROM t_inquiry_email WHERE delete_flag = 0 AND id ='".$id."'");
 	    if($result['success'] == true && $result['count'] > 0)
 	    {
 	    	$data =  $result['rows'][0];
@@ -64,6 +64,12 @@ Class InquiryEmailModel Extends baseModel{
             $result = $this->db->update("INSERT INTO t_inquiry_email (`reception_mail`, `inquiry_type` , `update_user`) VALUES ('$mail','$inquiry','$currentUser')");    		
     	}
 
+    }
+
+    public function deleteInquiry($id, $update_user)
+    {
+        $result = $this->db->query("UPDATE t_inquiry_email SET delete_flag='1', update_date=NOW(), update_user='$update_user' WHERE id='$id'");
+        return $result;
     }
 
 }
