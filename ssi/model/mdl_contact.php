@@ -11,8 +11,10 @@ Class ContactModel Extends baseModel{
         $mailHandler = new MailHandler();
         $emails=array();
         $contactInfo = $this->getContactInfo();
-        $emails = $this->getInquiryEmail($inquiry);
-        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number,'11'=>$inquiry, '12'=>$content);
+        $inquiryInfo = $this->getInquiryEmail($inquiry);
+        $emails = $inquiryInfo['reception_mail'];
+        $inquiryType = $inquiryInfo['inquiry_type'];
+        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number,'11'=>$inquiryType, '12'=>$content);
         return $mailHandler->sendMailToAdmin($params, $emails, $contactInfo->getAutoMailContentAdmin());
     }
 
@@ -21,7 +23,11 @@ Class ContactModel Extends baseModel{
         $mailHandler = new MailHandler();
 
         $contactInfo = $this->getContactInfo();
-        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number, '11'=>$inquiry, '12'=>$content);
+
+        $inquiryInfo = $this->getInquiryEmail($inquiry);
+        $inquiryType = $inquiryInfo['inquiry_type'];
+
+        $params = array('1'=>$name, '2'=>$company_name, '13'=>$company_url, '3'=>$postal_code, '4'=>$prefectures, '5' =>$city, '6'=>$address, '7'=>$phone, '8'=>$email, '9'=>$fax, '10'=>$mobile_number, '11'=>$inquiryType, '12'=>$content);
 
         return $mailHandler->sendMailToUser($name, $email, $params, $contactInfo->getAutoMailContent());
 
@@ -73,15 +79,20 @@ Class ContactModel Extends baseModel{
     }
 
     private function getInquiryEmail($id) {
+        $result = array();
         $listContact = array();
-        $result = $this->db->query("SELECT reception_mail FROM t_inquiry_email WHERE  delete_flag = 0 AND id = ".$id);
+        $inquiryType = '';
+        $result = $this->db->query("SELECT reception_mail, inquiry_type FROM t_inquiry_email WHERE  delete_flag = 0 AND id = ".$id);
         if($result['success'] == true && $result['count'] > 0)
         {
            $data =  $result['rows'][0]; 
            $listMail = $data['reception_mail'];
+           $inquiryType = $data['inquiry_type'];
            $listContact=explode(',',$listMail);
         }
-        return $listContact;
+        $result['reception_mail'] = $listContact;
+        $result['inquiry_type'] = $inquiryType;
+        return $result;
     }
 }
 ?>
