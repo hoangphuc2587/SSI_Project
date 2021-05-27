@@ -27,6 +27,23 @@ Class ContactModel Extends baseModel{
 
     }
 
+    public function getAllInquiry() {
+        $listInquiry = array();
+        $query = "SELECT * FROM t_inquiry_email WHERE delete_flag = 0";
+        $result = $this->db->query($query);
+        if($result['success'] == true)
+        {           
+            $data =  $result['rows'];
+            foreach ($data as $row) {
+                $inquiry = array();
+                $inquiry['id'] = $row['id'];
+                $inquiry['inquiry_type'] = $row['inquiry_type'];               
+                array_push($listInquiry, $inquiry);
+            }
+        }
+        return $listInquiry;
+    }
+
     /*ログインユーザーの情報を取得*/
     private function getContactInfo() {
 
@@ -45,6 +62,8 @@ Class ContactModel Extends baseModel{
         }
         return $contactInfo;
     }
+
+    
     private function getListContact() {
 
         $contactInfo = $this->getContactInfo();
@@ -53,9 +72,9 @@ Class ContactModel Extends baseModel{
         return $listContact;
     }
 
-    private function getInquiryEmail($inquiry_type) {
+    private function getInquiryEmail($id) {
         $listContact = array();
-        $result = $this->db->query("SELECT reception_mail FROM t_inquiry_email WHERE inquiry_type = '".$inquiry_type."'");
+        $result = $this->db->query("SELECT reception_mail FROM t_inquiry_email WHERE  delete_flag = 0 AND id = ".$id);
         if($result['success'] == true && $result['count'] > 0)
         {
            $data =  $result['rows'][0]; 

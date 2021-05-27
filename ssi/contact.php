@@ -1,3 +1,9 @@
+<?php
+include 'model/mdl_contact.php';
+
+$contactModel = new ContactModel();
+$listInquiry = $contactModel->getAllInquiry();
+?>
 <!DOCTYPE html>
 <!--[if IE 6]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7 eq-ie6" lang="ja"> <![endif]-->
@@ -186,16 +192,12 @@
                                     <td>
                                         <div class="inquiry-type">
                                             <select name="inquiry" id="inquiry" class="errMessage">
-                                                <!-- <option value="お問い合わせ内容を選択してください" selected="selected">選択してください。</option> -->
-                                                <option value="0" selected="selected">選択してください。</option>
-                                                <option value="IT制作やプロジェクトに関するご相談">IT制作やプロジェクトに関するご相談</option>
-                                                <option value="業務効率化に関するご相談">業務効率化に関するご相談</option>
-                                                <option value="その他のご相談">その他のご相談</option>
-                                                <option value="資料請求（PmSQETs）">資料請求（PmSQETs）</option>
-                                                <option value="資料請求（SGS）">資料請求（SGS）</option>
-                                                <option value="パートナーについて">パートナーについて</option>
-                                                <option value="採用について">採用について</option>
-                                                <option value="その他">その他</option>
+                                              <option value="0" selected="selected">選択してください。</option>
+                                               <?php 
+                                                    foreach ($listInquiry as $inquiry) {
+                                                        echo '<option value="'.$inquiry['id'].'">'.$inquiry['inquiry_type'].'</option>';
+                                                    } 
+                                               ?>
                                             </select>
                                             <span class="errMessage" id="errSelectOption"></span>
                                         </div>
