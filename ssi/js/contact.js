@@ -63,9 +63,11 @@ $(document).ready(function () {
             $("#email").text($('input[name=email]').val());
             $("#fax").text($('input[name=fax]').val());
             $("#phoneRequest").text($('input[name=phoneRequest]').val());
-            $("#inquiryItem").text($('select[name=inquiry]').val());
+            var id  = $('select[name=inquiry]').val();           
+            $("#inquiryItem").text($("select[name=inquiry] option[value='"+id+"']").text());
 	    $("#content").text($('textarea[name=content]').val());
 	    $("#content").css("white-space", "pre-wrap");
+        $("#content").css("word-break", "break-all");
         }
     });
 
